@@ -149,7 +149,7 @@ const Footer = () => {
           <div className="d-flex gap-3 my-3 flex-wrap">
             <a href='https://www.instagram.com/pixelworldfzc?igsh=OHMwc3Zpazg3Y25y' target='_blank' ><img src={InstaIcon} alt="insta" height={24} width={24} /></a>
             <a href='https://x.com/Pixelworldfzc' target='_blank' ><img src={XIcon} alt="x" height={24} width={24} /></a>
-            <a href='https://www.facebook.com/share/1FUH2at763/?mibextid=wwXIfr' target='_blank' >
+            <a href='https://www.facebook.com/profile.php?id=61573776366139' target='_blank' >
               <img
                 src={FacebookIcon}
                 alt="facebook"
