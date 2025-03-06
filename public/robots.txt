@@ -1,0 +1,14 @@
+# Robots.txt file for your React.js website
+
+# Block all crawlers from accessing sensitive directories
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+
+# Allow all other content
+User-agent: *
+Allow: /
+
+# Sitemap URL
+Sitemap: https://pixelworld.ae/sitemap.xml
