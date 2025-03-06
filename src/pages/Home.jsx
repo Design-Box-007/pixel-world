@@ -161,7 +161,7 @@ const Home = () => {
                             </div> */}
 
                             <h1 className='hero-text'>No. 1 Dubai LED Screen Company, with indoor and outdoor LED screens.</h1>
-                            <div className='d-flex gap-1'>
+                            <div className='d-flex gap-1 justify-content-center flex-wrap'>
                                 <a href='https://wa.me/+971585321473' className='text-decoration-none' target='_blank'><button className='buttonTwo d-flex align-items-center gap-2'><FaWhatsapp size={50} /> +971585321473</button></a>
                                 <a href='https://wa.me/+971555131473' className='text-decoration-none' target='_blank'><button className='buttonTwo d-flex align-items-center gap-2'><FaWhatsapp size={50} /> +971555131473</button></a>
                             </div>
