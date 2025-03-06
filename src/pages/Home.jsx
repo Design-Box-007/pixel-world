@@ -143,26 +143,27 @@ const Home = () => {
                 <div className='hero-image-container'>
 
                     {/* <img src={heroImage} alt='heroImage' width="100%" height="100%" className='hero-image' /> */}
-                    <video src={HeroVideo} controls autoPlay muted className="hero-image">
+                    <video src={HeroVideo} autoPlay muted className="hero-image">
                         Your browser does not support the video tag.
                     </video>
 
                     <div className="hero-image-overlay"></div>
                     <div className='hero-content'>
                         <div className='d-flex align-items-center flex-column'>
-                            <h2 className='hero-title'>Pixel World</h2>
+                            {/* <h2 className='hero-title'>Pixel World</h2> */}
                             {/* <div className='hero-description'>Seamless Visual Experiences, From Concept to Completion</div> */}
                         </div>
                         <div className='hero-subcontent'>
-                            <div>
+                            {/* <div>
                                 <button className='hero-explore-btn'>
                                     Chat with Expert <IoMdArrowForward size={20} />
                                 </button>
-                            </div>
-                            <h1 className=' hero-text'>No. 1 Dubai LED Screen Company, with indoor and outdoor LED screens.</h1>
-                            <div className='d-flex flex-column gap-1'>
-                                <a href='https://wa.me/+971585321473' className='text-decoration-none' target='_blank'><button className='buttonTwo d-flex align-items-center gap-2'><FaWhatsapp /> +971585321473</button></a>
-                                <a href='https://wa.me/+971555131473' className='text-decoration-none' target='_blank'><button className='buttonTwo d-flex align-items-center gap-2'><FaWhatsapp /> +971555131473</button></a>
+                            </div> */}
+
+                            <h1 className='hero-text'>No. 1 Dubai LED Screen Company, with indoor and outdoor LED screens.</h1>
+                            <div className='d-flex gap-1'>
+                                <a href='https://wa.me/+971585321473' className='text-decoration-none' target='_blank'><button className='buttonTwo d-flex align-items-center gap-2'><FaWhatsapp size={50} /> +971585321473</button></a>
+                                <a href='https://wa.me/+971555131473' className='text-decoration-none' target='_blank'><button className='buttonTwo d-flex align-items-center gap-2'><FaWhatsapp size={50} /> +971555131473</button></a>
                             </div>
                         </div>
                     </div>
