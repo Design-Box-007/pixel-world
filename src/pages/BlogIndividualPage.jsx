@@ -67,7 +67,7 @@ const BlogIndividualPage = () => {
             "name": "Pixelworld",
             "logo": {
                 "@type": "ImageObject",
-                "url": {logo} // Replace with your logo URL
+                "url": { logo } // Replace with your logo URL
             }
         },
         "mainEntityOfPage": {
@@ -89,8 +89,8 @@ const BlogIndividualPage = () => {
                     <meta name="twitter:title" content={productData?.title} />
                     <meta name="twitter:description" content={productData?.description} />
                     <meta name="twitter:image" content={productData?.image} /><script type="application/ld+json">
-                    {JSON.stringify(schemaData)}
-                </script>
+                        {JSON.stringify(schemaData)}
+                    </script>
                 </Helmet>
             )}
             <div className='d-flex justify-content-between align-items-center'>
@@ -119,6 +119,17 @@ const BlogIndividualPage = () => {
                 <div className='my-4' key={index}>
                     <h2 className='product-title'>{index + 1}. {item.title}</h2>
                     <p className='product-description'>{item.details}</p>
+                    <ul>
+                        {
+                           item.subpoints && item?.subpoints.map((item, index) => (
+                                <li className='my-4 subpoints' key={index}>
+                                    <p className='product-description'>
+                                        <b className='light-black'>{item.title} :</b> {item.details}
+                                    </p>
+                                </li>
+                            ))
+                        }
+                    </ul>
                     <hr />
                 </div>
             ))}
