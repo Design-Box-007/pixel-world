@@ -15,13 +15,15 @@ import Blog from './pages/Blog';
 import ContactUs from './pages/ContactUs';
 import Industries from './pages/Industries';
 import Industry from './pages/IndustryIndividualPage';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import WhatsappProfileImage from './assets/whatsapp-profile.jpg'
 
 function App() {
 
   return (
-      <BrowserRouter>
-        <Header />
-        <div className="global">
+    <BrowserRouter>
+      <Header />
+      <div className="global">
         <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
@@ -35,9 +37,17 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/faq" element={<FAQ />} />
         </Routes>
-        </div>
-        <Footer/>
-      </BrowserRouter>
+      </div>
+      <FloatingWhatsApp
+        phoneNumber="+971 58 532 1473"
+        allowClickAway
+        chatMessage="Hi How can we help you?"
+        statusMessage="Sales Team"
+        accountName="Pazhanivel"
+        avatar={WhatsappProfileImage}
+      />
+      <Footer />
+    </BrowserRouter>
   )
 }
 
