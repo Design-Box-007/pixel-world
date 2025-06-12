@@ -86,6 +86,36 @@
   color: var(--black-color);
 }
 
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Align items to the left */
+  gap: 0.5rem;
+  /* Spacing between links */
+  padding: 2rem 0;
+}
+
+.footer-navlinks-title {
+  color: white!important;
+  margin-bottom: 1rem;
+}
+
+.footer-navlink {
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-navlink:hover {
+  color: var(--green);
+  /* or any hover color that matches your brand */
+}
+
+
+
 .nav-link:hover {
   color: var(--primary-color);
 }

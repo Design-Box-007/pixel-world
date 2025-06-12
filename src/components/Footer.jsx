@@ -5,6 +5,7 @@ import logoWhite from '../assets/px-logo-web.png';
 import XIcon from '../assets/XIcon.png';
 import FacebookIcon from '../assets/FacebookIcon.png';
 import emailjs from 'emailjs-com';
+import { Link } from 'react-router-dom';
 // import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
@@ -13,6 +14,30 @@ const Footer = () => {
     mobile: '',
     message: '',
   });
+
+  const navlinks = [
+    {
+      navTitle: "Home",
+      navLink: "/"
+    },
+    {
+      navTitle: "About Us",
+      navLink: "/aboutus"
+    },
+    {
+      navTitle: "Industries",
+      navLink: "/industries"
+    },
+    {
+      navTitle: "Projects",
+      navLink: "/projects"
+    },
+    {
+      navTitle: "Blog",
+      navLink: "/blog"
+    }
+  ];
+
 
   const [submissionStatus, setSubmissionStatus] = useState(null);
 
@@ -130,7 +155,7 @@ const Footer = () => {
         your journey with Us
       </div> */}
       <div className='row'>
-        <div className='col-md-7'>
+        <div className='col-md-6'>
           <div className="footer-map mb-4">
             <iframe
               title="Location"
@@ -145,7 +170,19 @@ const Footer = () => {
           </div>
 
         </div>
-        <div className='col-md-5'>
+        <div className="col-md-3">
+          <h5 className='footer-navlinks-title'>Links</h5>
+          <div className='navlinks'>
+            {
+              navlinks.map((nav, index) => (
+                <Link to={nav.navLink} key={index} className='text-decoration-none footer-navlink'>
+                  {nav.navTitle}
+                </Link>
+              ))
+            }
+          </div>
+        </div>
+        <div className='col-md-3'>
           <div className="d-flex gap-3 my-3 flex-wrap">
             <a href='https://www.instagram.com/pixelworldfzc?igsh=OHMwc3Zpazg3Y25y' target='_blank' ><img src={InstaIcon} alt="insta" height={24} width={24} /></a>
             <a href='https://x.com/Pixelworldfzc' target='_blank' ><img src={XIcon} alt="x" height={24} width={24} /></a>
