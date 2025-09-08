@@ -1,21 +1,17 @@
-import React from 'react';
+import React from "react";
 
-
-import { Link } from 'react-router-dom';
-import { IoIosArrowDropright } from 'react-icons/io';
+import { Link } from "react-router-dom";
+import { IoIosArrowDropright } from "react-icons/io";
 // import productsData from '../data/productsData';
-import productData from '../data/productsData';
+import productData from "../data/productsData";
 // import { IoIosArrowDropright } from 'react-icons/io';
 // import { Link } from 'react-router-dom';
-
-
-
 
 const Explore = () => {
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0, // Scroll to the top of the page
-      behavior: 'smooth', // Smooth scroll animation
+      behavior: "smooth", // Smooth scroll animation
     });
   };
 
@@ -48,20 +44,23 @@ const Explore = () => {
                   </figure>
                   <div className="col-md-6 mb-5">
                     <div
-                      className={`d-flex gap-2 flex-column justify-content-center ${item.textAlign === "center" ? "align-items-center" : ""
-                        } w-100 h-100`}
+                      className={`d-flex gap-2 flex-column justify-content-center ${
+                        item.textAlign === "center" ? "align-items-center" : ""
+                      } w-100 h-100`}
                     >
                       <h2
-                        className={`explore-subtitle ${item.textAlign === "center" ? "text-center" : ""
-                          }`}
+                        className={`explore-subtitle ${
+                          item.textAlign === "center" ? "text-center" : ""
+                        }`}
                       >
                         {item.title}
                       </h2>
                       <p
-                        className={`explore-description ${item.textAlign === "center" ? "text-center" : ""
-                          }`}
+                        className={`explore-description ${
+                          item.textAlign === "center" ? "text-center" : ""
+                        }`}
                       >
-                        {item.description}
+                        {item.intro}
                       </p>
                       <div className="d-flex flex-row flex-wrap"></div>
                       <div className="d-flex flex-wrap align-items-center gap-2">
@@ -85,20 +84,23 @@ const Explore = () => {
                 <>
                   <div className="col-md-6 mb-5">
                     <div
-                      className={`d-flex gap-2 flex-column justify-content-center ${item.textAlign === "center" ? "align-items-center" : ""
-                        } w-100 h-100`}
+                      className={`d-flex gap-2 flex-column justify-content-center ${
+                        item.textAlign === "center" ? "align-items-center" : ""
+                      } w-100 h-100`}
                     >
                       <h2
-                        className={`explore-subtitle ${item.textAlign === "center" ? "text-center" : ""
-                          }`}
+                        className={`explore-subtitle ${
+                          item.textAlign === "center" ? "text-center" : ""
+                        }`}
                       >
                         {item.title}
                       </h2>
                       <p
-                        className={`explore-description ${item.textAlign === "center" ? "text-center" : ""
-                          }`}
+                        className={`explore-description ${
+                          item.textAlign === "center" ? "text-center" : ""
+                        }`}
                       >
-                        {item.description}
+                        {item.intro}
                       </p>
                       <div className="d-flex flex-row flex-wrap"></div>
                       <div className="d-flex flex-wrap align-items-center gap-2">
@@ -133,7 +135,6 @@ const Explore = () => {
             </div>
           </article>
         ))}
-
       </div>
     </section>
   );

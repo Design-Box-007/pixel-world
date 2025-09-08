@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
-import { IoShareSocial } from 'react-icons/io5';
-import insdustriesData from '../data/industriesData';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import React, { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { IoShareSocial } from "react-icons/io5";
+import insdustriesData from "../data/industriesData";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import KioskFeatures from "../components/ListComponent";
 
 const Industry = () => {
   const { industryKey } = useParams();
@@ -12,7 +13,9 @@ const Industry = () => {
   const [faqState, setFaqState] = useState([]);
 
   const fetchdata = () => {
-    const productData = insdustriesData.find((item) => item.industryKey === industryKey);
+    const productData = insdustriesData.find(
+      (item) => item.industryKey === industryKey
+    );
     setProductData(productData);
     if (productData?.faq) {
       setFaqState(productData.faq.map(() => ({ isOpen: false })));
@@ -26,7 +29,7 @@ const Industry = () => {
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
@@ -40,13 +43,14 @@ const Industry = () => {
 
   const handleShareClick = () => {
     if (navigator.share) {
-      navigator.share({
-        title: productData?.title,
-        text: productData?.description,
-        url: `https://www.pixelworld.ae/industry/${industryKey}`,
-      })
-        .then(() => console.log('Successfully shared'))
-        .catch((error) => console.log('Error sharing', error));
+      navigator
+        .share({
+          title: productData?.title,
+          text: productData?.description,
+          url: `https://www.pixelworld.ae/industry/${industryKey}`,
+        })
+        .then(() => console.log("Successfully shared"))
+        .catch((error) => console.log("Error sharing", error));
     } else {
       setIsModalOpen(true);
     }
@@ -61,31 +65,37 @@ const Industry = () => {
   return (
     <div className="container-fluid">
       {productData && (
-      <Helmet>
-        <title>{productData?.title} - PixelWorld</title>
-        <meta name="description" content={productData?.description} />
-        <meta name="keywords" content={productData?.keywords?.join(', ')} />
-        <meta property="og:title" content={productData?.title} />
-        <meta property="og:description" content={productData?.description} />
-        <meta property="og:image" content={productData?.image} />
-        <meta property="og:url" content={`https://www.pixelworld.ae/industry/${industryKey}`} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={productData?.title} />
-        <meta name="twitter:description" content={productData?.description} />
-        <meta name="twitter:image" content={productData?.image} />
-      </Helmet>)}
-      <div className='d-flex justify-content-between align-items-center'>
-        <h1 className='product-title w-75 text-white'>{productData?.title}</h1>
+        <Helmet>
+          <title>{productData?.title} - PixelWorld</title>
+          <meta name="description" content={productData?.description} />
+          <meta name="keywords" content={productData?.keywords?.join(", ")} />
+          <meta property="og:title" content={productData?.title} />
+          <meta property="og:description" content={productData?.description} />
+          <meta property="og:image" content={productData?.image} />
+          <meta
+            property="og:url"
+            content={`https://www.pixelworld.ae/industry/${industryKey}`}
+          />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={productData?.title} />
+          <meta name="twitter:description" content={productData?.description} />
+          <meta name="twitter:image" content={productData?.image} />
+        </Helmet>
+      )}
+      <div className="d-flex justify-content-between align-items-center">
+        <h1 className="product-title w-75 text-white">{productData?.title}</h1>
         <div>
           <IoShareSocial
             size={28}
             onClick={handleShareClick}
-            style={{ cursor: 'pointer' }}
-            className='text-white'
+            style={{ cursor: "pointer" }}
+            className="text-white"
             title="Share this blog"
           />
         </div>
       </div>
+
+      {/* container 1 */}
       <div className="product-image-container">
         <img
           src={productData?.image}
@@ -93,13 +103,38 @@ const Industry = () => {
           className="product-image"
         />
       </div>
-      <div className='my-4'>
-        <h2 className='product-title text-white'>{productData?.subtitle}</h2>
-        <p className='product-description text-white' dangerouslySetInnerHTML={{ __html: productData?.description }}></p>
+      <div className="my-4">
+        <h2 className="product-title text-white">{productData?.subtitle}</h2>
+        <p
+          className="product-description text-white"
+          dangerouslySetInnerHTML={{ __html: productData?.description }}
+        ></p>
       </div>
-      <hr className='text-white' />
+      <hr className="text-white" />
 
-      <h2 className='product-title text-white'>Frequently Asked Question</h2>
+      {/* container 2 */}
+
+      <KioskFeatures
+        cardImage={productData?.image}
+        cardAlt={productData?.title}
+        cardTitle={productData?.subtitle2}
+        cardDescription={productData?.description2}
+        titles={
+          Array.isArray(productData?.listTitle)
+            ? productData.listTitle
+            : [productData?.listTitle]
+        }
+        features={productData?.list || []}
+        footers={
+          Array.isArray(productData?.listFooter)
+            ? productData.listFooter
+            : [productData?.listFooter]
+        }
+      />
+
+      <hr className="text-white" />
+
+      <h2 className="product-title text-white">Frequently Asked Question</h2>
       {productData?.faq.map((item, index) => (
         <div key={index} className="faq-item" onClick={() => toggleFAQ(index)}>
           <div className="d-flex justify-content-between align-items-center">
@@ -150,7 +185,9 @@ const Industry = () => {
                 Share on Twitter
               </a>
               <a
-                href={`https://wa.me/?text=${encodeURIComponent(shareableLink)}`}
+                href={`https://wa.me/?text=${encodeURIComponent(
+                  shareableLink
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-success"
@@ -158,7 +195,9 @@ const Industry = () => {
                 Share on WhatsApp
               </a>
               <a
-                href={`mailto:?subject=${productData?.title}&body=${encodeURIComponent(shareableLink)}`}
+                href={`mailto:?subject=${
+                  productData?.title
+                }&body=${encodeURIComponent(shareableLink)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"

@@ -6,6 +6,8 @@ import XIcon from '../assets/XIcon.png';
 import FacebookIcon from '../assets/FacebookIcon.png';
 import emailjs from 'emailjs-com';
 import { Link } from 'react-router-dom';
+import { BsInstagram, BsTwitterX } from 'react-icons/bs';
+import { FaFacebook } from 'react-icons/fa';
 // import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
@@ -75,7 +77,7 @@ const Footer = () => {
 
   return (
     <div className="footer" >
-      <div className="row">
+      {/* <div className="row">
         <h6 className='text-center text-white mb-4'>Dubai's leading Led signage, Indoor and Outdoor LED screens, and Customised LED screen supplier.</h6>
         <div className="col-md-5 col-lg-8">
           <h2 className="footer-title">Let’s Talk</h2>
@@ -148,7 +150,7 @@ const Footer = () => {
             </div>
           )}
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="footer-description">
         Let’s craft a unique experience together. Get in touch today to start
@@ -184,23 +186,18 @@ const Footer = () => {
         </div>
         <div className='col-md-3'>
           <div className="d-flex gap-3 my-3 flex-wrap">
-            <a href='https://www.instagram.com/pixelworldfzc?igsh=OHMwc3Zpazg3Y25y' target='_blank' ><img src={InstaIcon} alt="insta" height={24} width={24} /></a>
-            <a href='https://x.com/Pixelworldfzc' target='_blank' ><img src={XIcon} alt="x" height={24} width={24} /></a>
+            <a href='https://www.instagram.com/pixelworldfzc?igsh=OHMwc3Zpazg3Y25y' target='_blank' > <BsInstagram size={30} color="#E1306C"/></a>
+            <a href='https://x.com/Pixelworldfzc' target='_blank' ><BsTwitterX size={30} color='black'/></a>
             <a href='https://www.facebook.com/profile.php?id=61573776366139' target='_blank' >
-              <img
-                src={FacebookIcon}
-                alt="facebook"
-                height={24}
-                width={24}
-              /></a>
+               <FaFacebook size={30}/></a>
           </div>
-          <h6 className='footer-address text-white'>408, Appartment M02, Persia cluster, International city, Dubai - UAE.</h6>
-          <h6 className='footer-email text-white'>sales@pixelworld.ae</h6>
-          <h6 className='footer-phone text-white'>
+          <h6 className='footer-address'>408, Appartment M02, Persia cluster, International city, Dubai - UAE.</h6>
+          <h6 className='footer-email'>sales@pixelworld.ae</h6>
+          <h6 className='footer-phone'>
             {/* <IoAtOutline size={24} /> */}
             +971 58 532 1473
           </h6>
-          <h6 className='footer-phone text-white'>
+          <h6 className='footer-phone'>
             {/* <IoAtOutline size={24} /> */}
             +971 55 513 1473
           </h6>
@@ -208,7 +205,7 @@ const Footer = () => {
       </div>
 
       <div className="d-sm-flex justify-content-between align-items-center">
-        <div className="footer-logo">
+        <div className="footer-logo" >
           <img src={logoWhite} alt="logoWhite" width={200} height={60} />
           {/* <span>Pixel World</span> */}
         </div>
