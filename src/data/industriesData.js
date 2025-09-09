@@ -17,10 +17,98 @@ const insdustriesData = [
     industryKey: "retail",
     title: "Retail",
     subtitle:
-      "No.1 LED Screen supplier with superior quality for Retail Shops and Signage",
-    description: ` Retail LED screens, digital displays, and digital signage are revolutionizing the shopping experience, offering retailers the ability to engage customers with dynamic, real-time content. LED screens, whether used for indoor or outdoor applications, provide high-quality visuals with superior brightness and clarity, making them perfect for both advertisements and promotions. Retailers can leverage these displays to show product ads, special offers, event information, and even live social media feeds, all of which can be easily updated to reflect changing campaigns or store promotions. This flexibility allows businesses to capture the attention of passersby, enhance their in-store experience, and drive sales with minimal effort.
-        <br/><br/>Digital signage and interactive displays go beyond simple advertising, offering valuable tools for customer engagement. Interactive touchscreens allow shoppers to browse catalogs, check product details, or access store directories, making it easier for them to find what they’re looking for. These displays can also be used to create immersive experiences, such as virtual try-ons or product demonstrations, increasing customer interaction. Additionally, timers integrated into digital signage can create a sense of urgency for limited-time offers, flash sales, or countdowns to events, encouraging customers to act quickly and increasing the likelihood of a purchase.
-        <br/><br/>PixelWorld provides the best quality and support for retail LED screens, digital displays, and digital signage. With their superior products, PixelWorld ensures that retailers can display vibrant, high-definition content that captures customer attention and enhances the shopping experience. Along with high-quality displays, PixelWorld offers excellent customer support, including installation, maintenance, and technical assistance. This comprehensive service makes PixelWorld an ideal partner for retailers looking to enhance their in-store advertising and customer engagement with reliable, cutting-edge technology. With PixelWorld, retailers can confidently create impactful, dynamic displays that improve customer satisfaction and drive business growth.`,
+      "Solving Retail Challenges with PixelWorld’s LED & Digital Kiosk Solutions",
+    description:
+      "In today’s competitive retail landscape, attracting customers, keeping them engaged, and delivering a seamless shopping experience are major challenges — whether you're a boutique in Dubai, a supermarket in Riyadh, or an electronics store in Muscat.</br></br> At PixelWorld, we provide smart, scalable solutions that help retailers capture attention, streamline operations, and enhance customer experience using customised digital kiosks, indoor LED screens, and outdoor LED displays.</br></br> Let’s break down how each solution helps solve real-world problems in retail.",
+    kioskData: [
+      {
+        cardTitle: "Customised Digital Kiosks: Smarter Customer Interactions",
+        cardImage: CorporateImage,
+        cardAlt: "Digital Kiosk",
+        titles: ["Problems Solved:"],
+        features: [
+          "Long queues for service or billing",
+          "Inability to serve all customers during busy hours",
+          "Manual product inquiries and stock checks",
+          "Poor loyalty program engagement",
+          "Language barriers in diverse customer bases",
+        ],
+      },
+      {
+        titles: ["How Our Kiosks Help:"],
+        features: [
+          "Self-Service Product Browsing: Customers can browse catalogs, check stock availability, and view product specs without waiting for staff.",
+          "Quick Loyalty Sign-Up & Coupon Access: Integrated loyalty programs via NFC, QR, or phone number input.",
+          "Digital Feedback & Help Desks: Instant customer feedback collection and support ticket creation.",
+          "Multilingual Interfaces: Built to serve diverse shoppers across the Gulf region.",
+          "POS Integration: Customers can place orders directly from the kiosk if an item is out of stock.",
+        ],
+        footers: [
+          "Ideal for: Supermarkets, fashion stores, electronics outlets, shopping malls, and chain retail stores",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Indoor LED Screens",
+        cardTitle: "Indoor LED Screens: Enhance the In-Store Experience",
+        titles: ["Problems Solved:"],
+        features: [
+          "Static signage with no flexibility",
+          "Missed opportunities to promote offers in real-time",
+          "Poor in-store engagement and branding",
+          "Limited visibility of products or promotions",
+        ],
+      },
+      {
+        titles: ["How Our Indoor LED Screens Help:"],
+        features: [
+          "Dynamic Promotions: Update offers in real-time across multiple screens — no printing needed.",
+          "Interactive Video Walls: Create immersive brand storytelling or highlight seasonal collections.",
+          "LED Banners & Shelf Displays: Compact, high-brightness displays for retail aisles or product sections.",
+          "Transparent LEDs for Storefronts: A futuristic touch that showcases promotions without blocking the view inside.",
+          "Meeting Room & Staff Training Displays: Equip internal teams with better communication tools.",
+        ],
+        footers: [
+          "Ideal for: Retail chains, fashion stores, electronics showrooms, luxury boutiques, and department stores",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Outdoor LED Screens",
+        cardTitle: "Outdoor LED Screens: Capture Attention Before They Walk In",
+        titles: ["Problems Solved:"],
+        features: [
+          "Limited store visibility in crowded retail hubs",
+          "No way to attract foot traffic from a distance",
+          "Rigid advertising tools that can't be updated quickly",
+          "Low engagement during off-peak hours",
+        ],
+      },
+      {
+        titles: ["How Our Outdoor LED Screens Help:"],
+        features: [
+          "High-Brightness Displays: Easily visible even in direct sunlight, perfect for street-facing stores.",
+          "Digital Billboards & LED Banners: Promote daily deals, new launches, or in-store events.",
+          "Weatherproof & Durable: Built for Gulf climate, withstanding heat, dust, and rain.",
+          "Curved & Custom Shapes: Match your building design or brand aesthetic.",
+          "Solar-Powered Options: Energy-efficient signage for sustainability-focused businesses.",
+        ],
+        footers: [
+          "Ideal for: Street-side stores, shopping malls, automotive showrooms, mega stores, and pop-up events",
+        ],
+      },
+      {
+        cardTitle: "Why PixelWorld?",
+        features: [
+          "Dubai-based HQ with operations and support across UAE, Saudi Arabia, Oman, Kuwait, Qatar, and Bahrain",
+          "Custom-built software developed in collaboration with Pixel Panda Technologies",
+          "Full-service offering: Consultation, installation, integration, and long-term maintenance",
+          "Premium-grade hardware with global certifications and energy-efficient components",
+          "Exceptional support before, during, and after deployment",
+        ],
+      },
+    ],
+
     faq: [
       {
         question: " What Are LED Screens, and How Do They Work?",
@@ -109,51 +197,86 @@ const insdustriesData = [
       "Transforming Corporate Spaces with PixelWorld’s LED & Digital Kiosk Solutions",
     description:
       "In today’s fast-paced corporate environment, seamless communication, efficient facility management, and strong brand presence are critical to a company’s success. Whether it's a tech campus in Dubai, a financial headquarters in Riyadh, or a multinational office in Doha, modern businesses across the Gulf are looking for smarter ways to operate and engage. </br></br> PixelWorld helps bridge that gap with advanced digital kiosk systems, custom indoor LED screens, and high-performance outdoor displays designed specifically for corporate spaces. With operations across the UAE, Saudi Arabia, Oman, Kuwait, Qatar, and the wider Gulf region, we offer tailored solutions that address the real challenges corporate environments face today.",
-    subtitle2:
-      "Customised Digital Kiosks: Streamlining Front Desk Operations and Workplace Management",
-    description2:
-      "Corporate buildings often face operational bottlenecks such as manual visitor check-ins, poor navigation across large office premises, and inefficient resource booking systems. These issues not only affect productivity but also hinder the visitor experience.",
-    subtitle3:
-      "Indoor LED Displays: Enhancing Internal Communication and Workplace Ambience",
-    description3:
-      "Corporate teams often struggle with effective communication across departments, especially in large buildings or multi-floor offices. Traditional notice boards and emails lack impact, and brand messaging is often lost in everyday clutter.",
-
-    listTitle:
-      "Our customised digital kiosks solve these problems by offering:",
-    list: [
-      "Self-service visitor check-in with badge printing and ID verification",
-      "Interactive wayfinding systems for easy navigation within large campuses",
-      "Real-time meeting room booking systems integrated with corporate calendars",
-      "Employee self-service portals for HR, IT, and internal requests",
-      "RFID/NFC or facial recognition for secure access and monitoring",
+    kioskData: [
+      {
+        titles: [
+          "Our customised digital kiosks solve these problems by offering:",
+        ],
+        features: [
+          "Self-service visitor check-in with badge printing and ID verification",
+          "Interactive wayfinding systems for easy navigation within large campuses",
+          "Real-time meeting room booking systems integrated with corporate calendars",
+          "Employee self-service portals for HR, IT, and internal requests",
+          "RFID/NFC or facial recognition for secure access and monitoring",
+        ],
+        footers: [
+          "These kiosks are powered by intelligent, industry-specific software developed in partnership with Pixel Panda Technologies, ensuring each installation is customised to fit the client's infrastructure and workflow.",
+        ],
+        cardImage: CorporateImage,
+        cardAlt: "Kiosk 1",
+        cardTitle:
+          "Customised Digital Kiosks: Streamlining Front Desk Operations and Workplace Management",
+        cardDescription:
+          "Corporate buildings often face operational bottlenecks such as manual visitor check-ins, poor navigation across large office premises, and inefficient resource booking systems. These issues not only affect productivity but also hinder the visitor experience.",
+      },
+      {
+        titles: [
+          "PixelWorld’s indoor LED solutions help solve these challenges by enabling:",
+        ],
+        features: [
+          "Digital bulletin boards to share real-time announcements, KPIs, or safety messages",
+          "Dynamic lobby displays to welcome visitors and reinforce brand identity",
+          "High-definition meeting room screens for professional presentations and video conferencing",
+          "Training room displays that support interactive learning environments",
+          "Visual branding walls that keep employees connected to company values",
+        ],
+        footers: [
+          "Our indoor LED screens are energy-efficient, sleek, and designed to blend seamlessly with corporate aesthetics, making your office not just functional but future-forward.",
+        ],
+        cardImage: CorporateImage,
+        cardAlt: "Kiosk 2",
+        cardTitle:
+          "Indoor LED Displays: Enhancing Internal Communication and Workplace Ambience",
+        cardDescription:
+          "Corporate teams often struggle with effective communication across departments, especially in large buildings or multi-floor offices. Traditional notice boards and emails lack impact, and brand messaging is often lost in everyday clutter.",
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Kiosk 3",
+        cardTitle:
+          "Outdoor LED Displays: Maximizing Brand Visibility and External Communication",
+        cardDescription:
+          "Corporate buildings in high-traffic areas often underutilize their exterior space, missing opportunities to project their brand, communicate messages to the public, or create a strong visual presence.",
+        titles: ["PixelWorld’s outdoor LED solutions address this with:"],
+        features: [
+          "High-brightness, weather-resistant LED signage for building exteriors",
+          "Custom-shaped LED installations that align with your architectural design",
+          "Outdoor video walls for public announcements or promotional campaigns",
+          "Digital billboards to communicate recruitment, CSR initiatives, or events",
+          "Solar-powered and energy-efficient models built for long-term, sustainable use",
+        ],
+        footers: [
+          "Each display is built with durability and visibility in mind, ensuring 24/7 performance even in the demanding Gulf climate.",
+        ],
+      },
+      {
+        titles: ["Why Corporates Across the Gulf Choose PixelWorld"],
+        features: [
+          "Strong regional presence with a fully operational base in Dubai",
+          "Active service across the UAE, Saudi Arabia, Oman, Qatar, Kuwait, and Bahrain",
+          "Industry-specific software and kiosk solutions through our software partner Pixel Panda Technologies",
+          "End-to-end project support including consultation, installation, training, and maintenance",
+          "Globally certified, premium-quality LED screens and kiosk hardware",
+          "Dedicated customer support before, during, and after implementation",
+        ],
+      },
+      {
+        cardTitle2: ["Build Smarter Corporate Spaces with PixelWorld"],
+        cardDescription2: [
+          "Whether you’re a real estate developer managing office parks, an enterprise company with global operations, or a fast-growing startup scaling your workspace, PixelWorld provides the tools to modernize, digitize, and optimize.</br></br>Contact our team today to schedule a free consultation and explore how our tailored LED and digital kiosk solutions can help you transform your corporate environment.",
+        ],
+      },
     ],
-    listFooter:
-      "These kiosks are powered by intelligent, industry-specific software developed in partnership with Pixel Panda Technologies, ensuring each installation is customised to fit the client's infrastructure and workflow.",
-    listTitle2:
-      "PixelWorld’s indoor LED solutions help solve these challenges by enabling:",
-    list2: [
-      "Digital bulletin boards to share real-time announcements, KPIs, or safety messages",
-      "Dynamic lobby displays to welcome visitors and reinforce brand identity",
-      "High-definition meeting room screens for professional presentations and video conferencing",
-      "Training room displays that support interactive learning environments",
-      "Visual branding walls that keep employees connected to company values",
-    ],
-    listFooter2:
-      "Our indoor LED screens are energy-efficient, sleek, and designed to blend seamlessly with corporate aesthetics, making your office not just functional but future-forward.",
-    subtitle4:
-      "Outdoor LED Displays: Maximizing Brand Visibility and External Communication",
-    description4:
-      "Corporate buildings in high-traffic areas often underutilize their exterior space, missing opportunities to project their brand, communicate messages to the public, or create a strong visual presence.",
-    listTitle3: "PixelWorld’s outdoor LED solutions address this with:",
-    list3: [
-      "High-brightness, weather-resistant LED signage for building exteriors",
-      "Custom-shaped LED installations that align with your architectural design",
-      "Outdoor video walls for public announcements or promotional campaigns",
-      "Digital billboards to communicate recruitment, CSR initiatives, or events",
-      "Solar-powered and energy-efficient models built for long-term, sustainable use",
-    ],
-    listFooter3:
-      "Each display is built with durability and visibility in mind, ensuring 24/7 performance even in the demanding Gulf climate.",
     faq: [
       {
         question:
@@ -230,10 +353,102 @@ const insdustriesData = [
     industryKey: "hospitality",
     title: "Hospitality",
     subtitle:
-      "Pixelworld provides best led screens for hotel lobbies, receptions and restaurants at affordable price and maintenance",
-    description: ` In the hospitality industry, LED screens, digital displays, and digital signage are transforming the guest experience and improving operational efficiency. Whether used in hotel lobbies, conference rooms, restaurants, or guest rooms, these displays allow businesses to communicate important information, showcase promotions, and provide entertainment in a visually engaging way. LED screens can display check-in details, local event listings, and special offers, ensuring that guests are always informed and entertained. Digital signage is also a powerful tool for wayfinding, helping guests navigate large properties, find amenities, or locate event spaces. With the ability to easily update content in real-time, hospitality businesses can deliver personalized, timely information that enhances the guest experience and fosters customer satisfaction.
-        <br/><br/>Interactive digital displays in hospitality settings offer a deeper level of engagement. Touchscreen displays can be installed in hotel lobbies or rooms to allow guests to check-in, explore amenities, or access local information like weather, dining options, or nearby attractions. Interactive kiosks can also be used to streamline check-in/check-out processes or even allow guests to make reservations for dining or spa services. For events and conferences, LED screens can be used to display live feeds, event schedules, and presentations, creating a more engaging and seamless experience for attendees. Timers and countdowns can also be integrated into digital signage, adding excitement and anticipation for upcoming events, meal services, or special promotions.
-        <br/><br/>PixelWorld provides the best quality and support for hospitality LED screens, digital signage, and interactive displays. With high-resolution screens, customizable content options, and seamless integration into any hotel or resort environment, PixelWorld ensures that hospitality businesses can enhance the guest experience while improving communication and operational efficiency. Their displays are designed to withstand the demands of busy hospitality settings while delivering clear, impactful content. PixelWorld’s expert customer support ensures smooth installation, ongoing maintenance, and technical assistance, helping businesses maximize the effectiveness of their digital signage solutions. Whether it’s for enhancing the guest experience or promoting services, PixelWorld’s products offer cutting-edge technology that supports the unique needs of the hospitality industry. `,
+      "Digitally Elevating Hospitality & Restaurants with PixelWorld Solutions",
+    description:
+      "In today’s competitive hospitality and restaurant landscape, experience is everything. Whether it’s a luxury hotel in Dubai, a family restaurant in Muscat, or a beach resort in Doha, guests expect seamless service, fast information access, and memorable visual engagement from the moment they arrive.</br></br>The challenge? Most hospitality businesses struggle with outdated processes, lack of real-time communication, and limited digital engagement. That’s where PixelWorld steps in, offering innovative Digital Kiosks, Indoor LED Screens, and Outdoor LED Displays tailored to meet the dynamic needs of the hospitality industry across the UAE, Saudi Arabia, Oman, Kuwait, Qatar, and other Gulf countries.",
+
+    kioskData: [
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Hospitality Kiosk",
+        cardTitle:
+          "Digital Kiosks: Reducing Wait Times, Enhancing Guest Convenience",
+        cardDescription: `
+    Long queues at the reception desk, missed event registrations, or delayed check-ins can create frustration, 
+    especially during peak hours. Hospitality businesses also often lack multilingual support and interactive 
+    digital services that modern guests expect.
+  `,
+        titles: [
+          "PixelWorld’s customised digital kiosks address these issues with:",
+        ],
+        features: [
+          "Contactless self check-in and check-out for hotels and resorts",
+          "Event registration kiosks with live scheduling and ticketing",
+          "Restaurant ordering kiosks to streamline food service operations",
+          "Multilingual content support to cater to international guests",
+          "Digital concierge features for room service, bookings, and inquiries",
+          "Wayfinding maps for large hotels, resorts, or convention centers",
+        ],
+        footers: [
+          "Each kiosk is powered by user-friendly software developed in collaboration with our software partner, Pixel Panda Technologies, ensuring complete flexibility and brand integration.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Hospitality Indoor LED",
+        cardTitle:
+          "Indoor LED Displays: Enhancing Ambience and Real-Time Engagement",
+        cardDescription: `
+    Hotels, restaurants, and entertainment venues thrive on atmosphere. 
+    However, many rely on static signage or printed displays that become outdated quickly and fail to create the “wow” factor.
+  `,
+        titles: [
+          "PixelWorld’s indoor LED solutions elevate interior spaces through:",
+        ],
+        features: [
+          "Digital menu boards that update in real-time and highlight offers",
+          "Lobby video walls for promotions, branding, and guest welcomes",
+          "Event screens in banquet halls or conference spaces",
+          "Ambient LED visuals that enhance the mood in lounges, restaurants, and spas",
+          "Informational displays for amenities, weather updates, or local attractions",
+        ],
+        footers: [
+          "Our LED displays are sleek, energy-efficient, and customizable to fit both modern and classic interior aesthetics — designed to blend technology with experience.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Hospitality Outdoor LED",
+        cardTitle:
+          "Outdoor LED Screens: Capturing Attention and Driving Foot Traffic",
+        cardDescription: `
+    Your exterior is often your first impression. Yet, many restaurants and hotels miss the opportunity 
+    to promote themselves effectively due to outdated or unlit signage.
+  `,
+        titles: ["With PixelWorld’s outdoor LED solutions, you can:"],
+        features: [
+          "Showcase live offers, menus, and promotions on vibrant, high-brightness displays",
+          "Display welcome messages or event announcements to passersby",
+          "Install large-format LED video walls for open-air lounges or entertainment zones",
+          "Use weatherproof, solar-ready displays for year-round outdoor visibility",
+          "Deploy LED banners and curtain screens for immersive outdoor brand experiences",
+        ],
+        footers: [
+          "All outdoor displays are built to withstand harsh Gulf climates — from the coastal winds of Qatar to the intense heat of Riyadh — while ensuring 24/7 visibility and durability.",
+        ],
+      },
+      {
+        titles: ["Why Hospitality Brands Across the Gulf Choose PixelWorld"],
+        features: [
+          "Trusted regional presence with headquarters in Dubai and service across the UAE, Saudi Arabia, Oman, Kuwait, Qatar, and Bahrain",
+          "Full-service offering: Consultation, hardware installation, software development, training, and after-sales support",
+          "Custom-designed kiosks and software for every use case — hotel, fine dining, QSRs, cafes, or resorts",
+          "Award-winning design and display technology for both interiors and exteriors",
+          "Reliable after-sales service including regular maintenance and upgrades",
+        ],
+      },
+      {
+        cardTitle: "Let PixelWorld Help You Redefine Guest Experience",
+        cardDescription: `
+    Whether you're managing a boutique resort, a multi-location restaurant chain, or a luxury hotel, 
+    PixelWorld empowers you with smart digital tools that enhance efficiency, drive engagement, 
+    and elevate every guest experience.
+    </br></br>
+    Contact us today to explore how our LED display systems and digital kiosks 
+    can modernize your hospitality business and leave a lasting impression on every visitor.
+  `,
+      },
+    ],
     faq: [
       {
         question:
@@ -313,10 +528,106 @@ const insdustriesData = [
     industryKey: "hospital",
     title: "Hospital",
     subtitle:
-      "High-quality LED screens for clear signage, patient information, and enhanced visual communication, with affordable rental options and easy maintenance.",
-    description: ` In hospitals, LED screens, digital displays, and digital signage are transforming patient care and communication within healthcare environments. These technologies provide an efficient way to deliver important information to patients, visitors, and staff. In lobbies, waiting areas, and hallways, LED screens can display real-time updates on wait times, hospital services, health tips, and emergency notifications, ensuring that crucial information is readily accessible. Digital signage in patient rooms can be used to showcase personalized content, such as care instructions, educational videos, or entertainment options, improving the patient experience and keeping them informed. With the ability to update content instantly, these digital solutions enable hospitals to respond to evolving needs and ensure that all messages are up-to-date and relevant.
-        <br/><br/>Interactive displays in hospitals offer even more opportunities to engage patients and visitors. Touchscreen kiosks can be placed in lobbies or waiting areas to help visitors find directions, register for appointments, or access information about hospital services. In patient rooms, interactive digital signage can provide educational content on health conditions, treatment options, and recovery tips, empowering patients to make informed decisions about their care. For staff communication, digital signage can display important updates or procedural reminders in common areas or break rooms, improving internal communication and workflow efficiency. Timers integrated into digital displays can also be used to count down to scheduled events, like medication times or upcoming medical procedures, enhancing organization and reducing anxiety.
-        <br/><br/>PixelWorld offers the best quality and support for hospital LED screens, digital signage, and interactive displays. With high-resolution screens and user-friendly content management systems, PixelWorld ensures that hospitals can deliver clear, effective communication while enhancing the patient experience. Whether used for informational displays in public areas or educational content in patient rooms, PixelWorld’s displays provide sharp, vibrant visuals that meet the demanding needs of healthcare environments. Their expert customer support ensures that hospitals receive timely installation, maintenance, and technical assistance, helping them maintain efficient and reliable communication systems. With PixelWorld’s innovative solutions, hospitals can improve patient engagement, streamline operations, and create a more comforting, informative environment for all. `,
+      "Transforming Healthcare Experiences with PixelWorld’s Smart Display & Kiosk Solutions",
+    description: ` In healthcare, time, clarity, and communication can make all the difference. 
+    Hospitals and medical centers across the UAE, Saudi Arabia, Oman, Kuwait, Qatar, and the wider Gulf region 
+    face common challenges — long wait times, manual patient registration, inefficient wayfinding, 
+    and difficulty communicating important information in real time.
+    </br></br>
+    PixelWorld, with its comprehensive range of digital kiosks, indoor LED displays, and outdoor signage, 
+    is helping healthcare providers overcome these barriers, one digital solution at a time. `,
+    kioskData: [
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Healthcare Kiosk",
+        cardTitle: "Digital Kiosks: Streamlining Patient Flow and Self-Service",
+        cardDescription: `
+    Hospitals are often overwhelmed by administrative tasks like patient registration, appointment bookings, 
+    and data collection — all of which can delay treatment and increase stress.
+  `,
+        titles: [
+          "PixelWorld’s customised digital kiosks, designed with healthcare workflows in mind, provide:",
+        ],
+        features: [
+          "Self check-in and appointment booking kiosks to reduce reception queues",
+          "Multilingual interface for diverse patient populations",
+          "Real-time patient feedback kiosks placed in waiting areas",
+          "QR code-based check-ins for quicker identification",
+          "Digital wayfinding kiosks to guide visitors across large facilities",
+        ],
+        footers: [
+          "These kiosks are powered by secure, healthcare-friendly software — developed in collaboration with our software partner, Pixel Panda Technologies — and fully tailored to match hospital systems and branding.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Healthcare Indoor LED",
+        cardTitle: "Indoor LED Displays: Inform, Educate, and Reassure",
+        cardDescription: `
+    Inside a hospital, communication must be clear, accurate, and accessible. 
+    Yet, many facilities still rely on printed signs or outdated digital screens that do little to assist or engage patients and visitors.
+  `,
+        titles: [
+          "PixelWorld’s indoor LED solutions help hospitals create a calm, informed environment through:",
+        ],
+        features: [
+          "Dynamic patient information boards in waiting rooms",
+          "Educational video walls to promote health awareness and procedures",
+          "Departmental display screens to communicate directions, doctor schedules, or updates",
+          "Real-time alert systems integrated with internal communications",
+          "Clean, high-brightness displays that operate quietly and efficiently",
+        ],
+        footers: [
+          "With sleek designs and low energy consumption, our indoor LEDs seamlessly blend into medical environments while improving the patient journey.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Healthcare Outdoor LED",
+        cardTitle: "Outdoor LED Screens: Communicating with the Community",
+        cardDescription: `
+    Hospitals are not just treatment centers — they are community anchors. 
+    But without strong external visibility, it's difficult to raise awareness for services, health campaigns, or emergency alerts.
+  `,
+        titles: [
+          "PixelWorld’s outdoor LED screens are designed to enhance external communication with:",
+        ],
+        features: [
+          "Weather-resistant LED signage for hospital entrances",
+          "Digital message boards for vaccination drives or health alerts",
+          "Emergency announcements and visitor instructions",
+          "High-visibility road-facing screens for public awareness campaigns",
+          "Solar-powered options for energy efficiency and sustainability",
+        ],
+        footers: [
+          "Built for the region’s demanding climate, our outdoor screens maintain clarity and brightness — even under direct sun or harsh weather.",
+        ],
+      },
+      {
+        titles: ["Why Healthcare Facilities Across the Gulf Choose PixelWorld"],
+        features: [
+          "Established operations in Dubai with reliable service across the UAE, Saudi Arabia, Oman, Kuwait, Qatar, and Bahrain",
+          "End-to-end digital transformation solutions: from hardware delivery to software integration",
+          "HIPAA-conscious software development through Pixel Panda Technologies",
+          "Dedicated technical support and kiosk maintenance services",
+          "Customisation and branding to meet hospital-specific needs",
+          "Trusted by healthcare professionals for reliability, simplicity, and patient-centric design",
+        ],
+      },
+      {
+        cardTitle: "Rethink Healthcare Engagement with PixelWorld",
+        cardDescription: `
+    Hospitals today need more than just equipment — they need digital partners who understand operational pain points 
+    and can deliver intelligent, secure, and user-friendly solutions.
+    </br></br>
+    From smart kiosks that streamline appointments, to LED displays that keep patients informed, 
+    PixelWorld empowers healthcare providers to create faster, smarter, and more compassionate experiences.
+    </br></br>
+    Connect with us today to discover how we can bring innovation to your healthcare facility.
+  `,
+      },
+    ],
+
     faq: [
       {
         question:
@@ -391,16 +702,52 @@ const insdustriesData = [
       },
     ],
   },
-
   {
     image: ExhibitionsMuseumsImage,
     industryKey: "exhibition-museum-and-art-galleries",
     title: "Exhibition, Museum & Art Galleries",
     subtitle:
-      "Make your presence valuable and attractive with high resolution pixels with Pixelworld",
-    description: ` In exhibitions, museums, and art galleries, LED screens, digital displays, and digital signage are transforming how art and information are presented to visitors. These technologies provide a dynamic way to showcase exhibits, share details about artworks, and create immersive experiences. LED screens can display high-resolution images or videos of artworks, allowing visitors to get a closer look at pieces from various angles or learn about an artist’s process and story. In museums and galleries, digital signage can be used to offer additional context, such as artist biographies, exhibit descriptions, or interactive timelines that provide deeper engagement with the exhibit. This flexibility in content presentation helps enrich the visitor’s experience and makes art more accessible to diverse audiences.
-        <br/><br/>Interactive displays in these environments can offer visitors a hands-on, educational experience. Touchscreen kiosks or digital panels can be used to explore interactive content, such as 3D models, augmented reality features, or multimedia presentations that dive deeper into the art or historical context. In museums, digital signage can also allow for real-time updates on events, guided tours, and special exhibitions, ensuring that visitors are always informed about what’s happening at the venue. LED screens can be strategically placed to create immersive environments, like large video walls that transform spaces, or projections that create a sense of atmosphere and storytelling within an exhibit. Additionally, countdown timers for events or interactive experiences can build excitement and anticipation, encouraging visitor participation.
-        <br/><br/>PixelWorld offers the best quality and support for LED screens, digital signage, and interactive displays in exhibitions, museums, and art galleries. With high-definition displays and customizable content options, PixelWorld ensures that institutions can showcase art and exhibitions with exceptional clarity, detail, and vibrancy. Their interactive solutions allow visitors to engage with the artwork, making the experience more engaging and educational. PixelWorld’s expert support team provides seamless installation and maintenance, ensuring that the technology operates smoothly throughout exhibitions. By choosing PixelWorld, museums, galleries, and exhibitions can enhance their ability to present and interpret art in a modern, engaging, and meaningful way, creating unforgettable experiences for visitors. `,
+      "Enhancing Exhibitions, Museums, and Art Galleries with PixelWorld",
+    description:
+      "In today’s digital era, exhibitions, museums, and art galleries are transitioning from traditional displays to more dynamic and engaging experiences. Whether it's showcasing contemporary artwork or historical treasures, the goal is to captivate visitors, tell stories more vividly, and provide immersive environments that leave a lasting impression.</br></br>However, many institutions across the UAE, Saudi Arabia, Qatar, Oman, Kuwait, and the wider Gulf region face challenges such as limited interactivity, static signage, and outdated visitor engagement methods. PixelWorld addresses these issues by offering a combination of digital kiosks, indoor LED screens, and outdoor LED displays that transform the way cultural content is delivered and experienced.",
+    kioskData: [
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Healthcare Kiosk",
+        cardTitle:
+          "Digital kiosks for interactive engagement and smart navigation",
+        cardDescription: `
+        PixelWorld’s digital kiosks allow museums and galleries to offer rich, interactive experiences that go beyond printed information. These kiosks serve multiple purposes, from visitor check-in and ticketing to wayfinding and exhibit interaction. They enable users to explore collections in depth, watch videos, view high-resolution images, or access content in multiple languages.</br></br>Our kiosks can be equipped with feedback forms, touchscreen maps, and educational games, making them ideal for children’s exhibits, historical walkthroughs, and large-scale events. With custom software development powered by our partner Pixel Panda Technologies, each kiosk is built to match the specific goals and themes of your space.
+   `,
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Healthcare Indoor LED",
+        cardTitle: "Indoor LED screens for storytelling and ambiance",
+        cardDescription: `
+        Our high-resolution indoor LED screens help bring content to life within the gallery or museum. These displays can be used for video storytelling, digital artwork, or to guide visitors through immersive exhibitions. The screens offer seamless visuals, quiet operation, and are customizable in shape and size to fit any environment.</br></br>Museums can use LED video walls for documentary screenings or animated history timelines, while art galleries can display digital installations or showcase rotating artist portfolios. With options for transparent and flexible displays, your content becomes more engaging and visually impactful.
+   `,
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Healthcare Outdoor LED",
+        cardTitle: "Outdoor LED displays to attract and inform",
+        cardDescription: `
+        The visitor experience starts before they walk through the door. PixelWorld’s outdoor LED screens are designed to capture attention and inform passersby with event updates, exhibition highlights, and promotional content. Built to withstand outdoor conditions, these screens provide vibrant visuals in any weather and are ideal for main entrances, building façades, or nearby public spaces.</br></br>Outdoor displays can be used to display opening hours, advertise upcoming events, or serve as digital billboards to raise awareness and increase foot traffic.
+   `,
+      },
+      {
+        cardTitle: "Supporting institutions across the Gulf region",
+        cardDescription:
+          "With a strong base in Dubai and a growing presence across the Gulf, including Saudi Arabia, Oman, Qatar, Kuwait, and Bahrain, PixelWorld delivers end-to-end support for every project. From consultation and installation to training and after-sales maintenance, our team ensures your systems are always running smoothly.</br></br>Our LED products and kiosks are built using high-quality materials and cutting-edge technology to ensure long-term performance and reliability. Whether it’s a temporary exhibition or a permanent museum installation, we tailor every solution to your space, audience, and content.",
+      },
+      {
+        cardTitle: "Enriching the cultural experience with technology",
+        cardDescription: `
+        At PixelWorld, we believe technology should enhance storytelling, not overshadow it. By combining visually stunning LED displays with intuitive digital kiosks, we help exhibitions, museums, and galleries across the region create interactive, inclusive, and memorable experiences for all visitors.</br></br>If you're planning to upgrade your space or launch a new exhibition, we’re here to help you integrate technology in a meaningful and effective way.
+   `,
+      },
+    ],
     faq: [
       {
         question:
@@ -480,11 +827,88 @@ const insdustriesData = [
     image: HomeImage,
     industryKey: "home",
     title: "Home",
-    subtitle:
-      "Pixelworld provides the best micro LEDs and LED technologies from facade lighting to home entertainment.",
-    description: ` In homes, LED screens, digital displays, and smart lighting are enhancing the way we experience entertainment, design, and functionality. Whether it’s for a home theater system, personalized smart lighting, or facade lighting, these technologies provide seamless integration into modern living spaces. LED screens offer crisp, high-definition visuals for movie nights, gaming, or watching TV shows, transforming your living room into a cinematic experience. Smart digital displays can also be used for managing home automation systems, displaying weather updates, or controlling smart home devices like thermostats and security systems. For homeowners looking to enhance the exterior of their property, facade lighting can highlight architectural features and create a welcoming ambiance, adding both style and security to your home.
-        <br/><br/>Interactive digital displays are becoming increasingly popular in home environments, allowing homeowners to engage with content and control various systems with ease. Touchscreen panels can be integrated into walls or countertops, providing control over lighting, climate, and home entertainment systems. In home theaters, digital displays can be used for immersive viewing experiences, with high-quality projectors or LED screens offering superior color and brightness for a cinematic atmosphere. In addition, digital signage solutions in kitchens or living rooms can display personalized content, such as calendars, reminders, news updates, or even artwork, giving homeowners the flexibility to customize their space.
-        <br/><br/>PixelWorld provides the best quality and support for home LED screens, digital displays, and smart lighting solutions. With high-definition visuals and energy-efficient products, PixelWorld ensures that homeowners can create an immersive and modern living environment. Their products are designed to integrate seamlessly into your home, offering both functionality and aesthetic appeal. PixelWorld also offers expert installation and maintenance services, ensuring that your home displays and smart systems operate smoothly. Whether you’re setting up a home theater, enhancing your home’s exterior with facade lighting, or integrating smart digital displays into your home, PixelWorld delivers cutting-edge solutions that enhance both comfort and convenience, helping you create a truly modern living space. `,
+    subtitle: "Transforming Homes and Residences with PixelWorld",
+    description:
+      "Homes are more than just living spaces — they’re where memories are made, families gather, and lifestyles are expressed. But many residences across the UAE, Saudi Arabia, Qatar, Oman, Kuwait, and the wider Gulf face the same challenges: outdated entertainment setups, limited control over smart systems, and a lack of modern design elements that blend technology with aesthetics.</br></br>At PixelWorld, we bring technology into homes in ways that are seamless, stylish, and practical — turning everyday living into an elevated experience. With LED displays, digital kiosks, and custom software solutions developed by our partner Pixel Panda Technologies, we create smart environments that are as beautiful as they are functional.",
+    kioskData: [
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Healthcare Kiosk",
+        cardTitle: "Digital kiosks for smart living and family convenience",
+        cardDescription: `
+        Modern households often struggle with fragmented systems — separate apps for lighting, climate, security, and entertainment. Digital kiosks solve this by acting as central control hubs inside the home.
+   `,
+        titles: ["With intuitive touchscreens, residents can:"],
+        features: [
+          "Manage lighting, AC, and home security in one place",
+          "Browse and play family photos, videos, or artwork in high resolution",
+          "Access intercom and visitor management systems",
+          "Leave digital notes for family members or create to-do lists",
+          "Connect to smart appliances for cooking, cleaning, and home automation",
+        ],
+        footers: [
+          "Powered by Pixel Panda Technologies, our kiosks are customizable with software tailored to each household’s lifestyle. For example, families can integrate parental controls, schedule reminders, or even gamify household chores for kids.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Healthcare Indoor LED",
+        cardTitle: "Indoor LED screens for entertainment and ambiance",
+        cardDescription: `
+    Traditional TVs limit how entertainment is enjoyed. Our high-resolution indoor LED screens transform living rooms, home theaters, and lounges into immersive entertainment zones. They provide:
+  `,
+        features: [
+          "Stunning video walls for movies, gaming, or sports",
+          "Digital art frames that showcase rotating artworks or family portraits",
+          "Ambient lighting effects that adjust to moods or occasions",
+          "Quiet, seamless displays that blend into any interior design",
+        ],
+        footers: [
+          "From luxury villas to modern apartments, our indoor LEDs create spaces that impress guests and enhance everyday living.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Healthcare Outdoor LED",
+        cardTitle: "Outdoor LED displays for style and security",
+        cardDescription: `
+   The home experience doesn’t stop indoors. PixelWorld’s outdoor LED displays add both style and function to residential properties:
+  `,
+
+        features: [
+          "Showcase welcome messages or family nameplates in a modern way",
+          "Display CCTV feeds or gate camera visuals",
+          "Host poolside or garden movie nights with outdoor LED walls",
+          "Share family events or celebration highlights during gatherings",
+        ],
+        footers: [
+          "Designed for durability, these displays withstand Gulf weather while delivering vibrant visuals day and night.",
+        ],
+      },
+      {
+        cardTitle: "Reliable support for modern living",
+        cardDescription:
+          "With a strong base in Dubai and expanding operations across the Gulf, PixelWorld provides full end-to-end support for residential projects — from consultation and design to installation, training, and after-sales service. Our products are engineered with long-term reliability in mind, ensuring families enjoy technology that is both functional and future-ready.",
+      },
+      {
+        cardTitle: "A smarter, more beautiful home",
+        cardDescription:
+          "At PixelWorld, we don’t see technology as just screens and kiosks. We see it as part of your lifestyle — a way to make homes more interactive, more connected, and more inspiring. Together with Pixel Panda Technologies, we deliver solutions that enhance comfort, entertainment, and security, making every day at home extraordinary.</br></br>If you’re looking to transform your home into a smarter, more stylish living space, PixelWorld is here to make it happen.",
+      },
+      {
+        cardTitle: "Rethink Healthcare Engagement with PixelWorld",
+        cardDescription: `
+    Hospitals today need more than just equipment — they need digital partners who understand operational pain points 
+    and can deliver intelligent, secure, and user-friendly solutions.
+    </br></br>
+    From smart kiosks that streamline appointments, to LED displays that keep patients informed, 
+    PixelWorld empowers healthcare providers to create faster, smarter, and more compassionate experiences.
+    </br></br>
+    Connect with us today to discover how we can bring innovation to your healthcare facility.
+  `,
+      },
+    ],
+
     faq: [
       {
         question:
@@ -560,11 +984,93 @@ const insdustriesData = [
     image: ConcertsImage,
     industryKey: "concerts-events-rental-staging",
     title: "Concerts,Events,Rental Staging",
-    subtitle:
-      "Enhance your events with Pixelworld’s premium LED screens, offering vibrant visuals for concerts and stage productions.",
-    description: ` For concerts, events, and rental staging, LED screens, digital displays, and video walls are essential tools that elevate the experience, engage audiences, and create immersive environments. LED screens can be used to showcase live feeds, event schedules, promotional videos, and performance visuals in real-time, ensuring that the audience stays connected with the action. Whether it’s a large concert, corporate event, or wedding, LED screens can be strategically placed to display dynamic content that enhances the atmosphere and supports the event's theme. Video walls are especially effective for large-scale productions, providing stunning visuals across a wide surface area that captivates audiences. Digital signage can also guide attendees, share important information, and display live updates throughout the event, helping to create a seamless experience from start to finish.
-        <br/><br/>For rental and staging solutions, LED screens and displays offer flexibility, scalability, and high-quality visuals that are perfect for temporary setups. Rental services provide the latest technology for event organizers, allowing them to choose from various screen sizes, resolutions, and configurations based on the specific requirements of the event. From large outdoor concerts requiring rugged, high-brightness screens to intimate indoor setups with smaller, finer pixel pitches like P2 or P3, these solutions can be customized to fit any venue and audience size. Timers and countdowns are often integrated into digital displays to add excitement and anticipation for upcoming performances or activities, ensuring that the audience remains engaged throughout the event. Additionally, interactive displays can be used to provide audience members with access to event details, artist information, or behind-the-scenes content.
-        <br/><br/>PixelWorld provides the best quality and support for LED screens, digital displays, and rental staging solutions for concerts and events. With high-resolution screens, modular video walls, and outdoor-rated displays, PixelWorld ensures that event organizers have access to the latest technology that can be easily customized for any venue or event type. Their rental services offer seamless installation, setup, and technical support, allowing clients to focus on the event itself while PixelWorld handles the technical aspects. Whether it’s for a large-scale concert, corporate conference, or intimate wedding, PixelWorld’s expertise in staging and rental solutions ensures high-quality visuals, smooth execution, and an unforgettable experience for all attendees. `,
+    subtitle: "Elevating Concerts, Events, and Rental Staging with PixelWorld",
+    description:
+      "Concerts, festivals, and live events are no longer just about music, speeches, or performances. They are about creating an atmosphere, telling a story, and leaving audiences with unforgettable memories. From the moment a guest arrives at a venue to the last note of a concert, every detail matters.</br></br>Yet, organizers across the UAE, Saudi Arabia, Qatar, Oman, Kuwait, and the wider Gulf often face recurring challenges: confusing entry processes, long queues, limited audience interaction, outdated visuals, and technical setups that can’t keep up with the scale of modern productions. PixelWorld addresses these problems with a powerful combination of digital kiosks, LED displays, and staging solutions that redefine how events are experienced.",
+
+    kioskData: [
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Home Kiosk",
+        cardTitle:
+          "Digital kiosks for smooth entry, engagement, and interaction",
+        cardDescription: `
+        For many events, the first challenge is guest management — long queues at ticket counters, lost visitors looking for their seats, or attendees unsure of event schedules. Digital kiosks eliminate these pain points by providing:
+     `,
+        features: [
+          "Smart ticketing & check-in: Guests can scan QR codes, print passes, or check in seamlessly without crowding entrances.",
+          "Interactive wayfinding: Touchscreen maps guide visitors to seating areas, food courts, or restrooms, reducing confusion in large venues.",
+          "Event schedules & performer lineups: Attendees can browse real-time updates on show timings, speaker sessions, or artist performances.",
+          "Audience feedback & engagement: Kiosks allow live voting, feedback collection, and interactive polls that make the audience feel part of the event.",
+          "Merchandise browsing & ordering: Guests can view and purchase event merchandise directly from kiosks.",
+        ],
+
+        footers: [
+          "With custom software powered by Pixel Panda Technologies, Dubai kiosks can be tailored to any type of event — from concerts and festivals to conferences and exhibitions. Whether it’s multilingual support, gamification for audience engagement, or integration with ticketing systems, each kiosk is designed to solve the real problems organizers face while enhancing the visitor journey.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Indoor LED Home",
+        cardTitle:
+          "Indoor LED screens that turn stages into storytelling platforms",
+        cardDescription: `
+        Once inside, the stage becomes the heart of the event. But traditional setups often fail to deliver visuals that match the scale of modern performances. PixelWorld’s high-resolution indoor LED screens transform concerts and events into immersive experiences by:
+     `,
+        features: [
+          "Serving as dynamic stage backdrops for live performances",
+          "Streaming close-up views so every guest, no matter their seat, feels connected",
+          "Displaying sponsor logos, advertisements, and partner branding",
+          "Creating visual effects, animations, and artistic content that elevate performances",
+        ],
+        footers: [
+          "Our LED systems are modular, flexible, and available in curved or transparent formats to match the creative direction of any event. Quiet, seamless, and high-definition, they ensure the focus stays on the performance while enhancing audience engagement.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Outdoor LED Home",
+        cardTitle: "Outdoor LED displays for maximum reach and visibility",
+        cardDescription: `
+        The energy of an event doesn’t just happen inside. With PixelWorld’s outdoor LED displays, organizers can extend their message to passersby and keep audiences informed before they enter the venue. These screens are perfect for:
+     `,
+        features: [
+          "Announcing showtimes, entry gates, and safety information",
+          "Broadcasting event highlights live outside the venue",
+          "Promoting sponsors and upcoming events",
+          "Guiding crowd movement at large-scale festivals",
+        ],
+        footers: [
+          "Built to withstand Gulf weather, our outdoor screens maintain vibrant clarity in both day and night settings.",
+        ],
+      },
+      {
+        cardTitle: ["Staging and rental solutions tailored to every event"],
+        cardDescription: [
+          "Every event is different — and so are its staging needs. PixelWorld provides complete rental staging solutions, including:",
+        ],
+        features: [
+          "Portable stage setups adaptable to any venue size",
+          "Trussing systems and dynamic lighting rigs",
+          "Integration of sound, visuals, and stage effects for seamless execution",
+        ],
+        footers: [
+          "With flexible rental packages, we cater to both intimate events and massive festivals, ensuring everything from setup to teardown runs smoothly.",
+        ],
+      },
+      {
+        cardTitle: "Supporting events across the Gulf regione",
+        cardDescription: `
+        With a strong base in Dubai and operations extending across Saudi Arabia, Oman, Qatar, Kuwait, and Bahrain, PixelWorld partners with event organizers, production houses, and venues to deliver end-to-end solutions. From consultation and design to installation, training, and after-sales support, our team ensures your event runs flawlessly.</br></br>Our products — built with high-quality materials and advanced engineering — are designed for durability, reliability, and performance in the most demanding environments.
+     `,
+      },
+      {
+        cardTitle: "Creating unforgettable moments with technology",
+        cardDescription:
+          "At PixelWorld, we don’t just rent out screens or provide staging. We help shape moments of wonder. The roar of a crowd seeing their favorite artist up close on a massive LED wall. The excitement of a fan interacting with a digital kiosk. The seamless flow of an event where everything just works.</br></br>With the combined power of PixelWorld’s staging and display solutions, and Pixel Panda Technologies’ custom software, we transform concerts, festivals, and events into experiences audiences never forget.</br></br>If you’re planning your next big event, let us help you bring your vision to life with technology that inspires.",
+      },
+    ],
+
     faq: [
       {
         question:
@@ -642,11 +1148,90 @@ const insdustriesData = [
     image: StreetHighwayImage,
     industryKey: "street-and-highway-outdoor-advertising",
     title: "Street and Highway Outdoor Advertising",
-    subtitle:
-      "High-impact LED screens for outdoor visibility, with durable, bright displays and easy maintenance.",
-    description: ` Street and highway outdoor digital advertising using LED screens, banners, and digital signage offers a powerful way to capture attention and engage passersby with vibrant, high-impact content. These outdoor displays are ideal for showcasing advertisements, public service announcements, and live event updates, helping businesses reach a broader audience. LED screens placed along streets or highways can display large-scale, dynamic content that is visible from a distance, with high brightness and resolution that make the message stand out even in bright daylight or adverse weather conditions. From promoting products or services to broadcasting news or weather updates, outdoor digital signage is an effective tool for communication and advertising in high-traffic areas.
-        <br/><br/>For outdoor environments, the durability and weather-resistance of the LED screens are key. These displays are specifically designed to withstand harsh conditions like rain, snow, or extreme heat while delivering consistent, high-quality visuals. With pixel pitches like P6 or P8, these screens offer excellent clarity for large outdoor displays, ensuring that content remains sharp and legible from long distances. Additionally, outdoor digital signage can be integrated with real-time data feeds, such as traffic information, fuel prices, or public safety messages, making it a versatile tool for both advertising and community engagement. Timers, countdowns, and event promotions can also be displayed, driving excitement for upcoming events or limited-time offers.
-        <br/><br/>PixelWorld offers the best quality and support for street and highway outdoor digital advertising solutions. With high-brightness LED screens designed for outdoor use, PixelWorld ensures that your content remains visible and vibrant, even in direct sunlight. Their displays are built to be durable and reliable, offering long-lasting performance in all weather conditions. Whether you need a single large display for a billboard or multiple screens for a digital signage network along a highway, PixelWorld provides flexible solutions tailored to your needs. With expert installation, technical support, and easy-to-use content management systems, PixelWorld helps businesses maximize the impact of their outdoor advertising efforts and deliver targeted messages to audiences in real time. `,
+    subtitle: "Redefining Street and Highway Advertising with PixelWorld",
+    description:
+      "Billboards and posters have long dominated streets and highways, but in today’s fast-moving world, static advertising often fades into the background. Commuters pass by without noticing, campaigns are hard to update, and advertisers struggle to measure impact.</br></br>Across the UAE, Saudi Arabia, Qatar, Oman, Kuwait, and the wider Gulf, brands are asking for more: ads that stand out, connect with audiences in real time, and adapt to changing campaigns instantly. PixelWorld delivers exactly that with dynamic LED displays, digital kiosks, and smart software powered by Pixel Panda Technologies — transforming outdoor advertising into an engaging and measurable experience.",
+    kioskData: [
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Street Digital Kiosk",
+        cardTitle: "Digital Kiosks that Engage Beyond the Billboard",
+        cardDescription: `
+      While drivers see highway ads, pedestrians and city dwellers interact more closely with kiosks. 
+      Traditional posters can’t respond, but our digital kiosks can. They help advertisers and city planners:
+    `,
+        features: [
+          "Display interactive ads with QR codes, discount vouchers, or app downloads",
+          "Run multilingual campaigns tailored to different communities",
+          "Provide maps, transit info, and public service announcements alongside ads",
+          "Collect user feedback or engagement data through touchscreens",
+          "Rotate content automatically to maximize ad space efficiency",
+        ],
+        footers: [
+          "With custom software by Pixel Panda Technologies, kiosks become more than advertising screens — they turn into city-smart hubs that combine information, interaction, and promotion.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Highway Outdoor LED",
+        cardTitle:
+          "Outdoor LED Screens that Dominate Highways and City Streets",
+        cardDescription: `
+      Static billboards can only do so much. 
+      PixelWorld’s high-resolution outdoor LED displays bring campaigns to life with motion, brightness, and flexibility. 
+      Advertisers gain the ability to:
+    `,
+        features: [
+          "Run time-based ads (morning coffee promos, evening dining offers)",
+          "Change content instantly without the cost of reprinting",
+          "Broadcast high-impact visuals, animations, and videos that catch the eye even at high speeds",
+          "Share multiple brand campaigns on one screen using rotation schedules",
+          "Provide emergency messages or public announcements when needed",
+        ],
+        footers: [
+          "Built for durability, our outdoor LEDs are weather-resistant, dustproof, and engineered for Gulf conditions, ensuring clarity day or night.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Data Driven Advertising",
+        cardTitle: "Smarter Advertising with Data and Control",
+        cardDescription: `
+      One of the biggest challenges in outdoor advertising is measurement. 
+      With Pixel Panda Technologies’ software integration, advertisers can:
+    `,
+        features: [
+          "Schedule and control campaigns remotely from a single dashboard",
+          "Track uptime, display reports, and content playback logs",
+          "Integrate with sensors or cameras to adapt ads based on traffic density or time of day",
+          "Generate analytics that prove ROI to clients and brands",
+        ],
+        footers: [
+          "This transforms outdoor advertising from a one-way message into a data-driven marketing platform.",
+        ],
+      },
+      {
+        titles: ["Supporting Cities and Advertisers Across the Gulf"],
+        features: [
+          "Headquarters in Dubai with projects across Saudi Arabia, Oman, Qatar, Kuwait, and Bahrain",
+          "Support for municipalities, developers, and media agencies in building world-class outdoor advertising networks",
+          "End-to-end services including consultation, installation, maintenance, and upgrades",
+          "Long-term reliability and performance in demanding Gulf conditions",
+        ],
+      },
+      {
+        cardTitle: "Turning Streets into Stories",
+        cardDescription: `
+      At PixelWorld, we see highways and city streets not as empty spaces, but as opportunities to tell stories. 
+      Our LED displays and kiosks don’t just show ads — they create impact, spark conversations, and make brands unforgettable.
+      </br></br>
+      With the combined strength of PixelWorld’s display solutions and Pixel Panda Technologies’ smart software, we’re shaping the future of outdoor advertising in the Gulf.
+      </br></br>
+      If you’re ready to transform your cityscape or highway advertising network, we’re here to make it happen.
+    `,
+      },
+    ],
+
     faq: [
       {
         question:
@@ -734,11 +1319,101 @@ const insdustriesData = [
     image: MallImage,
     industryKey: "mall-advertising",
     title: "Mall Advertising",
-    subtitle:
-      "Eye-catching LED screens for vibrant displays, designed for maximum visibility and impact in high-traffic areas.",
-    description: `Mall advertising using LED screens, digital displays, and digital signage offers a highly effective way to engage shoppers and drive sales in retail environments. These displays can be strategically placed throughout the mall to showcase vibrant advertisements, promotions, store directories, event information, and brand messaging. LED screens in high-traffic areas such as entrances, escalators, or near food courts can capture the attention of shoppers with bright, dynamic content that enhances the shopping experience. Whether promoting seasonal sales, special discounts, or new product launches, digital signage allows for real-time updates, ensuring that content is always relevant and fresh. Interactive displays can further engage shoppers by providing them with information about store locations, product details, or special events, creating a more personalized and convenient shopping experience.
-        <br/><br/>In addition to advertising, digital signage can be used to improve the overall navigation and wayfinding within malls. Large digital directories can help visitors easily locate stores, restrooms, or amenities, while touchscreen kiosks can offer more in-depth information, such as store promotions, mall events, or loyalty programs. LED displays can also be used to highlight ongoing events, special performances, or community engagement initiatives, helping to attract more foot traffic to specific areas of the mall. Timers and countdowns on digital displays are effective for creating urgency around flash sales or time-sensitive offers, driving immediate customer action and increasing sales.
-        <br/><br/>PixelWorld provides the best quality and support for mall advertising solutions, ensuring that retailers and mall operators can make the most of their digital signage and LED displays. With high-resolution screens and customizable content options, PixelWorld’s displays deliver stunning visuals that capture attention and enhance the overall mall environment. Their digital signage solutions are designed for seamless integration, allowing for easy content updates and centralized management across multiple displays. PixelWorld’s expert support team ensures that the installation, maintenance, and operation of digital signage systems are smooth and hassle-free, helping malls create engaging, interactive experiences that keep customers coming back. Whether you need to promote sales, provide wayfinding, or highlight events, PixelWorld offers flexible and reliable solutions tailored to your mall’s needs `,
+    subtitle: "Transforming Mall and Retail Experiences with PixelWorld",
+    description:
+      "Shopping has evolved far beyond browsing shelves. Today’s customers expect more than products — they want experiences that are engaging, personalized, and memorable. Yet many malls and retail spaces across the UAE, Saudi Arabia, Qatar, Oman, Kuwait, and the wider Gulf still rely on static posters, traditional signboards, and outdated information systems that fail to capture modern shoppers’ attention.  </br></br> PixelWorld helps retailers and mall operators bridge this gap by combining digital kiosks, indoor LED screens, and outdoor LED displays with custom software by Pixel Panda Technologies. Together, we create environments that not only attract customers but keep them engaged, informed, and connected.",
+    kioskData: [
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Mall Digital Kiosk",
+        cardTitle: "Digital Kiosks for Smarter Shopping Journeys",
+        cardDescription: `
+      Shoppers often face the same frustrations: difficulty finding stores, missing promotions, or waiting in long queues for information. 
+      PixelWorld’s digital kiosks solve these challenges by offering:
+    `,
+        features: [
+          "Interactive maps & wayfinding: guiding shoppers to stores, restrooms, dining, and entertainment areas",
+          "Smart promotions & loyalty integration: customers can view current offers, scan QR codes for discounts, or check loyalty points instantly",
+          "Self-service & inquiries: reduce wait times with kiosks that provide store directories, mall services, and event updates",
+          "Click-and-collect stations: integrate with retailers for easy order pickups",
+          "Feedback & engagement tools: collect shopper insights through surveys or interactive polls",
+        ],
+        footers: [
+          "With Pixel Panda Technologies, kiosks can be tailored with multilingual support, integration into POS systems, gamification for promotions, or even seasonal themes — turning every visit into an engaging journey.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Indoor LED Screens",
+        cardTitle: "Indoor LED Screens that Captivate Shoppers",
+        cardDescription: `
+      In retail, atmosphere is everything. PixelWorld’s indoor LED screens transform malls and stores into dynamic spaces that draw attention and encourage sales. They can be used for:
+    `,
+        features: [
+          "Fashion runways or live product demos inside the mall",
+          "Digital storefronts that change visuals instantly",
+          "Immersive product launches with cinematic displays",
+          "Highlighting seasonal sales, promotions, or mall-wide events",
+          "Creating lifestyle zones with ambient digital art and visuals",
+        ],
+        footers: [
+          "Seamless and high-resolution, our indoor LEDs blend into architecture and deliver unforgettable brand experiences.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Outdoor LED Displays",
+        cardTitle: "Outdoor LED Displays to Attract Visitors",
+        cardDescription: `
+      Before customers step inside, the experience begins at the entrance. PixelWorld’s outdoor LED displays help malls and retail brands:
+    `,
+        features: [
+          "Announce promotions, new store openings, and events",
+          "Display advertisements that increase footfall",
+          "Act as digital billboards for both in-house retailers and external advertisers",
+          "Strengthen brand visibility in busy city districts",
+        ],
+        footers: [
+          "Engineered for Gulf weather, these displays remain vibrant and reliable year-round.",
+        ],
+      },
+      {
+        cardImage: CorporateImage,
+        cardAlt: "Data Driven Retail",
+        cardTitle: "Smarter Retail with Data-Driven Solutions",
+        cardDescription: `
+      Retailers increasingly need insights into customer behavior. With Pixel Panda Technologies’ custom software, our solutions provide:
+    `,
+        features: [
+          "Centralized content management across multiple screens and kiosks",
+          "Real-time control of promotions and campaigns",
+          "Analytics on kiosk usage, campaign reach, and shopper interaction",
+          "Integration with CRM and loyalty platforms to personalize offers",
+        ],
+        footers: [
+          "This makes retail spaces not only more engaging but also smarter and more profitable.",
+        ],
+      },
+      {
+        titles: ["Supporting Malls and Retailers Across the Gulf"],
+        features: [
+          "Strong presence in Dubai with operations across Saudi Arabia, Oman, Qatar, Kuwait, and Bahrain",
+          "Partnership with mall developers, retail brands, and event organizers",
+          "End-to-end support from consultation and design to installation and after-sales service",
+          "Long-term impact and flawless performance in retail environments",
+        ],
+      },
+      {
+        cardTitle: "Where Shopping Meets Experience",
+        cardDescription: `
+      At PixelWorld, we don’t just install screens and kiosks — we help malls and retailers create journeys that inspire. 
+      By blending immersive LED displays with intelligent kiosks and software from Pixel Panda Technologies, we turn shopping into an experience that customers return to again and again.
+      </br></br>
+      If you’re ready to redefine your retail space or mall environment, PixelWorld is here to make it happen.
+    `,
+      },
+    ],
+
     faq: [
       {
         question:

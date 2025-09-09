@@ -375,7 +375,7 @@
 
 .explore-title {
   font-weight: 500;
-  font-size: 56px;
+  font-size: 45px;
   text-align: center;
   color: var(--black-color);
 }
@@ -929,10 +929,9 @@
 }
 
 .product-description {
-  font-weight: 500;
-  font-size: 20px;
-  color: gray;
+  font-size: 17px;
   line-height: 35px;
+  font-weight: 400;
 }
 .product-h-c {
   font-weight: 500;
@@ -1076,7 +1075,7 @@
 }
 
 .our-project-title {
-  font-size: 54px;
+  font-size: 45px;
   text-align: center;
 }
 
@@ -1164,7 +1163,7 @@
   border-radius: 16px;
   padding: 20px;
 }
-.contact {
+.contactUs {
   position: relative;
 }
 
@@ -1243,9 +1242,19 @@
   justify-content: space-between;
 }
 
-.home-about-left h3 {
-  color: rgb(6, 151, 199);
+.home-about-left a{
+  color: blue;
+  text-decoration: none;
+  text-align: right; 
+  font-size: 20px;
 }
+
+.home-about-left h3{
+  font-size: 35px;
+}
+ .home-about-left {
+  display: flex;
+ }
 
 .home-about-left h1 {
   font-size: 50px;
@@ -1257,14 +1266,19 @@
 }
 
 .home-about-left button {
-  width: 200px;
-  padding: 10px;
+  width: 150px;
+  padding: 8px;
   border: none;
   outline: none;
-  border-radius: 10px;
-  background-color: #6a77ff;
+  border-radius: 30px;
+  background-color: blue;
   color: white;
   font-size: 20px;
+}
+
+.home-about-button{
+  display: flex;
+  justify-content: end;
 }
 
 .details-container {
@@ -1310,25 +1324,33 @@
 }
 
 .kiosk-container {
-  color: white;
+  color: black;
   padding: 10px 10px;
   border-radius: 12px;
   margin: 20px auto;
 }
 
+.kiosk-image-card{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+ 
 .kiosk-title {
   font-size: 1.8rem;
   margin-bottom: 10px;
-  color: white;
+  color: black;
 }
 
-.kiosk-list {
-  list-style-type: disc;
-  padding-left: 25px;
-  margin: 15px 0;
+.kiosk-card li{
+  line-height: 40px;
   font-size: 20px;
 }
 
+.kiosk-card p{
+  font-size: 20px;
+}
  
 .kiosk-item {
   margin: 8px 0;
@@ -1338,9 +1360,14 @@
 
 .kiosk-footer {
   font-size: 0.9rem;
-  color: white;
+  color: black;
   font-size: 20px;
   margin-top: 10px;
+}
+.industry-main{
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
 }
 
 @media (max-width: 768px) {
@@ -1368,8 +1395,11 @@
     font-size: 14px;
   }
 
-  .home-about-left button {
-    width: 100%;
+  
+
+  .home-about-button button {
+    font-size: 15px;
+    width: 120px;
   }
 }
 

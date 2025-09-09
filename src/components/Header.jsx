@@ -69,8 +69,8 @@ const Header = () => {
       setNavBackgroundColor('var(--black-color)'); // Navbar background for FAQ page
       document.body.style.background = 'var(--black-color)'; // Background color for FAQ page
     }  else if (location.pathname.includes('/industry')) {
-      setNavColor('var(--white-color)');
-      setNavBackgroundColor('var(--black-color)'); // Navbar background for Services page
+      setNavColor('var(--black-color)');
+      setNavBackgroundColor('var(--white-color)'); // Navbar background for Services page
       document.body.style.background = 'var(--black-color)'; // Background color for Services page
     }  else {
       setNavColor('var(--black-color)');

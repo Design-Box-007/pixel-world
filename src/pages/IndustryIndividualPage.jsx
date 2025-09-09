@@ -63,7 +63,7 @@ const Industry = () => {
   const shareableLink = `https://www.pixelworld.ae/insdustry/${industryKey}`;
 
   return (
-    <div className="container-fluid">
+    <div className="industry-main">
       {productData && (
         <Helmet>
           <title>{productData?.title} - PixelWorld</title>
@@ -83,13 +83,13 @@ const Industry = () => {
         </Helmet>
       )}
       <div className="d-flex justify-content-between align-items-center">
-        <h1 className="product-title w-75 text-white">{productData?.title}</h1>
+        <h1 className="product-title w-75 text-black">{productData?.title}</h1>
         <div>
           <IoShareSocial
             size={28}
             onClick={handleShareClick}
             style={{ cursor: "pointer" }}
-            className="text-white"
+            className="text-black"
             title="Share this blog"
           />
         </div>
@@ -104,37 +104,21 @@ const Industry = () => {
         />
       </div>
       <div className="my-4">
-        <h2 className="product-title text-white">{productData?.subtitle}</h2>
+        <h2 className="product-title text-black">{productData?.subtitle}</h2>
         <p
-          className="product-description text-white"
+          className="product-description text-black"
           dangerouslySetInnerHTML={{ __html: productData?.description }}
         ></p>
       </div>
-      <hr className="text-white" />
+      <hr className="text-black" />
 
       {/* container 2 */}
 
-      <KioskFeatures
-        cardImage={productData?.image}
-        cardAlt={productData?.title}
-        cardTitle={productData?.subtitle2}
-        cardDescription={productData?.description2}
-        titles={
-          Array.isArray(productData?.listTitle)
-            ? productData.listTitle
-            : [productData?.listTitle]
-        }
-        features={productData?.list || []}
-        footers={
-          Array.isArray(productData?.listFooter)
-            ? productData.listFooter
-            : [productData?.listFooter]
-        }
-      />
+      <KioskFeatures kiosks={productData?.kioskData}/>
 
-      <hr className="text-white" />
+      <hr className="text-black" />
 
-      <h2 className="product-title text-white">Frequently Asked Question</h2>
+      <h2 className="product-title text-black">Frequently Asked Question</h2>
       {productData?.faq.map((item, index) => (
         <div key={index} className="faq-item" onClick={() => toggleFAQ(index)}>
           <div className="d-flex justify-content-between align-items-center">

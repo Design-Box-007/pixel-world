@@ -1,62 +1,82 @@
-
-const KioskFeatures = ({
-  titles = [],
-  features = [],
-  footers = [],
-  cardImage,
-  cardAlt,
-  cardTitle,
-  cardDescription,
-}) => {
+const KioskFeatures = ({ kiosks = [] }) => {
   return (
     <div className="kiosk-container">
-      {/* Top Card Section */}
-      {cardImage || cardTitle || cardDescription ? (
-        <div>
-          <div className="product-image-container">
-            {cardImage && (
-              <img
-                src={cardImage}
-                alt={cardAlt || "card image"}
-                className="product-image"
-              />
-            )}
-          </div>
-          <div className="my-4">
-            {cardTitle && (
-              <h2 className="product-title text-white">{cardTitle}</h2>
-            )}
-            {cardDescription && (
-              <p
-                className="product-description text-white"
-                dangerouslySetInnerHTML={{ __html: cardDescription }}
-              ></p>
-            )}
-          </div>
+      {kiosks.map((kiosk, idx) => (
+        <div key={idx} className="kiosk-card">
+          {/* Card Section */}
+          {(kiosk.cardImage || kiosk.cardTitle || kiosk.cardDescription) && (
+            <div className="kiosk-image-card">
+              {kiosk.cardImage && (
+                <div className="product-image-container">
+                  <img
+                    src={"https://placehold.co/400"}
+                    alt={kiosk.cardAlt || "card image"}
+                    className="product-image"
+                  />
+                </div>
+              )}
+              {(kiosk.cardTitle || kiosk.cardDescription) && (
+                <div>
+                  {kiosk.cardTitle && (
+                    <h2 className="product-title">{kiosk.cardTitle}</h2>
+                  )}
+                  {kiosk.cardDescription && (
+                    <p
+                      className="product-description"
+                      dangerouslySetInnerHTML={{
+                        __html: kiosk.cardDescription,
+                      }}
+                    />
+                  )}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Titles */}
+          {kiosk.titles?.length > 0 && (
+            <>
+              {kiosk.titles.map((title, i) => (
+                <h2 key={i}>{title}</h2>
+              ))}
+            </>
+          )}
+
+          {/* Features */}
+          {kiosk.features?.length > 0 && (
+            <ul>
+              {kiosk.features.map((feature, j) => (
+                <li key={j}>{feature}</li>
+              ))}
+            </ul>
+          )}
+
+          {/* Footers */}
+          {kiosk.footers?.length > 0 && (
+            <>
+              {kiosk.footers.map((footer, k) => (
+                <p key={k}>{footer}</p>
+              ))}
+            </>
+          )}
+
+          {/* Second Card Section */}
+          {(kiosk.cardTitle2 || kiosk.cardDescription2) && (
+            <div>
+              {kiosk.cardTitle2 && (
+                <h2 className="product-title">{kiosk.cardTitle2}</h2>
+              )}
+              {kiosk.cardDescription2 && (
+                <p
+                  className="product-description"
+                  dangerouslySetInnerHTML={{
+                    __html: kiosk.cardDescription2,
+                  }}
+                />
+              )}
+            </div>
+          )}
         </div>
-      ) : null}
-
-      {/* Titles */}
-      {titles.map((title, i) => (
-        <h2 key={i} className="kiosk-title">
-          {title}
-        </h2>
-      ))}
-
-      {/* Features */}
-      <ul className="kiosk-list">
-        {features.map((feature, index) => (
-          <li key={index} className="kiosk-item">
-            {feature}
-          </li>
-        ))}
-      </ul>
-
-      {/* Footers */}
-      {footers.map((footer, j) => (
-        <p key={j} className="kiosk-footer">
-          {footer}
-        </p>
       ))}
     </div>
   );

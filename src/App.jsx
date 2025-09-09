@@ -45,7 +45,7 @@ function App() {
         accountName="Pazhanivel"
         avatar={WhatsappProfileImage}
       />
-      <div className="contact">
+      <div className="contactUs">
         <ContactUs />
       </div>
       <Footer />

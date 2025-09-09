@@ -90,7 +90,7 @@ const Product = () => {
         </Helmet>
       )}
       <div className="d-flex justify-content-between align-items-center">
-        <h1 className="product-title w-75">{product?.title}</h1>
+        <h1 className="product-title-h1 w-75 ">{product?.title}</h1>
         <div>
           <IoShareSocial
             size={28}
@@ -118,7 +118,7 @@ const Product = () => {
       <ol className="product-title">
         {product?.products.map((item, index) => (
           <li key={index}>
-            <strong className="product-title">{item.title}</strong>
+            <div className="product-title">{item.title}</div>
             {item.intro && <p className="product-description">{item.intro}</p>}
             {item.description && (
               <p className="product-description">{item.description}</p>
@@ -133,7 +133,7 @@ const Product = () => {
                       point
                     ) : (
                       <>
-                        <strong>{point.title}</strong>
+                        <div>{point.title}</div>
                         {point.subPoints && (
                           <ul>
                             {point.subPoints.map((nested, nestedIndex) => (
@@ -149,7 +149,7 @@ const Product = () => {
             )}
                
             {item.conclusion && (
-              <p className="product-h-c">{item.conclusion}</p>
+              <p className="product-description">{item.conclusion}</p>
             )}
           </li>
         ))}

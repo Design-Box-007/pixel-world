@@ -169,10 +169,11 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
-
+               <div className="home-about-button">
               <button onClick={() => setShowDetails(!showDetails)}>
-                {showDetails ? "Hide Details" : "Read Details"}
+                {showDetails ? "Hide" : "Learn More"}
               </button>
+              </div>
             </div>
           </div>
           {/* <div className="mb-5">

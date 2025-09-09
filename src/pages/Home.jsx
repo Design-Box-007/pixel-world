@@ -252,10 +252,11 @@ const Home = () => {
               corporate installations.
             </p>
           </div>
-
+           <div className="home-about-button">
           <button onClick={() => setShowDetails(!showDetails)}>
-            {showDetails ? "Hide Details" : "Read Details"}
+            {showDetails ? "Hide" : "Learn More"}
           </button>
+          </div>
         </div>
       </div>
 
@@ -302,7 +303,7 @@ const Home = () => {
                 {/* <CiDiscount1 size={24} /> */}
               </div>
               <div className="occasionReady-card-description">
-                • At Pixelworld, we provide customised digital kiosk solutions
+                At Pixelworld, we provide customised digital kiosk solutions
                 with tailored software to meet the unique needs of industries
                 like retail, healthcare, hospitality, government, education, and
                 more. Our kiosks solve real-world problems—like long queues,
@@ -325,7 +326,7 @@ const Home = () => {
                 {/* <VscTools size={24} /> */}
               </div>
               <div className="occasionReady-card-description">
-                • At Pixelworld, we specialize in high-resolution indoor LED
+                At Pixelworld, we specialize in high-resolution indoor LED
                 displays tailored for a wide range of environments — from retail
                 stores, showrooms, and corporate offices to meeting rooms,
                 events, exhibitions, and private residences. Our offerings
@@ -349,7 +350,7 @@ const Home = () => {
                 {/* <IoPeopleOutline size={24} /> */}
               </div>
               <div className="occasionReady-card-description">
-                • Pixelworld offers a wide range of high-resolution outdoor LED
+                Pixelworld offers a wide range of high-resolution outdoor LED
                 displays engineered for visibility, durability, and impact.
                 Ideal for billboards, digital signage, public spaces, stadiums,
                 malls, and large-scale events, our weatherproof and
@@ -436,7 +437,7 @@ const Home = () => {
       </div>
       <div className="px-3">
         <div className="d-flex justify-content-between align-items-center">
-          <h2 className="product-title text-white">Recent News Post</h2>
+          <h2 className="product-title text-white">Blogs</h2>
           <Link onClick={handleScrollToTop} to="/blog">
             <button className="button-primary">
               View All <MdKeyboardArrowRight />
