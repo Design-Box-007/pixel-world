@@ -1,0 +1,54 @@
+.aboutus-intro {
+  border: solid 1px #323232;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.innovateDisplay-title {
+  font-weight: 400;
+  font-size: 45px;
+  text-align: center;
+}
+
+.innovateDisplay-description {
+  font-size: 20px;
+  text-align: left;
+  margin: 20px 0;
+  font-weight: 200;
+}
+
+.innovateDisplay-description h3 {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.innovateDisplay-description p {
+  color: black;
+  font-size: 20px;
+}
+
+.illimination-about-subtitle {
+  font-weight: 400;
+  font-size: 32px;
+  margin-top: 20px;
+  color: var(--black-color);
+  text-align: center;
+}
+
+@media (max-width: 992px){
+  .innovateDisplay-title{
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+ .innovateDisplay-description h3{
+    font-size: 25px;
+  }
+  .innovateDisplay-description p{
+    font-size: 15px;
+  }
+  .illimination-about-subtitle {
+    font-size: 25px;
+  }
+}

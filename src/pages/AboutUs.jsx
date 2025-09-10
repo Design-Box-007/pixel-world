@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./AboutUs.css"
 import innovateDisplayImage from "../assets/InnovateDisplayImage.png";
 import IlliminationImage from "../assets/IlliminationImage.png";
 import AboutUsHome from "../assets/AboutUsHome.jpg";

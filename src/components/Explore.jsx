@@ -1,140 +1,100 @@
-import React from "react";
-
+import React, { useRef } from "react";
+import "./Explore.css";
 import { Link } from "react-router-dom";
 import { IoIosArrowDropright } from "react-icons/io";
-// import productsData from '../data/productsData';
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import productData from "../data/productsData";
-// import { IoIosArrowDropright } from 'react-icons/io';
-// import { Link } from 'react-router-dom';
 
 const Explore = () => {
+  const scrollRef = useRef(null);
+
   const handleScrollToTop = () => {
-    window.scrollTo({
-      top: 0, // Scroll to the top of the page
-      behavior: "smooth", // Smooth scroll animation
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // console.log(productData.map((productData)=>{
-  //   return productData.title
-  // }));
+  const scrollLeft = () => {
+    scrollRef.current.scrollBy({ left: -320, behavior: "smooth" });
+  };
+
+  const scrollRight = () => {
+    scrollRef.current.scrollBy({ left: 320, behavior: "smooth" });
+  };
+
   return (
     <section className="explore">
       <h2 className="explore-title">
         Explore Our Range of <br /> Cutting-Edge LED
       </h2>
-      <div className="row">
+
+      {/* Desktop View */}
+      <div className="explore-list desktop-view">
         {productData.map((item, index) => (
-          <article className="col-md-12 my-5" key={index}>
-            <div className="row">
-              {index % 2 === 0 ? (
-                // Layout 1 (e.g., Image first)
-                <>
-                  <figure className="col-md-6 mb-5">
-                    <div className="explore-image-container ">
-                      <img
-                        src={item.image}
-                        alt={item.alt}
-                        width="100%"
-                        height="100%"
-                        className="explore-image"
-                        loading="lazy"
-                      />
-                    </div>
-                  </figure>
-                  <div className="col-md-6 mb-5">
-                    <div
-                      className={`d-flex gap-2 flex-column justify-content-center ${
-                        item.textAlign === "center" ? "align-items-center" : ""
-                      } w-100 h-100`}
-                    >
-                      <h2
-                        className={`explore-subtitle ${
-                          item.textAlign === "center" ? "text-center" : ""
-                        }`}
-                      >
-                        {item.title}
-                      </h2>
-                      <p
-                        className={`explore-description ${
-                          item.textAlign === "center" ? "text-center" : ""
-                        }`}
-                      >
-                        {item.intro}
-                      </p>
-                      <div className="d-flex flex-row flex-wrap"></div>
-                      <div className="d-flex flex-wrap align-items-center gap-2">
-                        <div className={`explore-description`}>
-                          <b>Want to know how to choose your LED screen?</b>
-                        </div>
-                        <Link
-                          to={item.link}
-                          onClick={handleScrollToTop}
-                          className="explore-button-two d-flex flex-wrap text-decoration-none"
-                          aria-label={`Learn more about ${item.title}`}
-                        >
-                          Learn more <IoIosArrowDropright size={24} />
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              ) : (
-                // Layout 2 (e.g., Text first)
-                <>
-                  <div className="col-md-6 mb-5">
-                    <div
-                      className={`d-flex gap-2 flex-column justify-content-center ${
-                        item.textAlign === "center" ? "align-items-center" : ""
-                      } w-100 h-100`}
-                    >
-                      <h2
-                        className={`explore-subtitle ${
-                          item.textAlign === "center" ? "text-center" : ""
-                        }`}
-                      >
-                        {item.title}
-                      </h2>
-                      <p
-                        className={`explore-description ${
-                          item.textAlign === "center" ? "text-center" : ""
-                        }`}
-                      >
-                        {item.intro}
-                      </p>
-                      <div className="d-flex flex-row flex-wrap"></div>
-                      <div className="d-flex flex-wrap align-items-center gap-2">
-                        <div className={`explore-description m-0`}>
-                          <b>Want to know how to choose your LED screen?</b>
-                        </div>
-                        <Link
-                          to={item.link}
-                          onClick={handleScrollToTop}
-                          className="explore-button-two d-flex flex-wrap text-decoration-none"
-                          aria-label={`Learn more about ${item.title}`}
-                        >
-                          Learn more <IoIosArrowDropright size={24} />
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                  <figure className="col-md-6 mb-5">
-                    <div className="explore-image-container">
-                      <img
-                        src={item.image}
-                        alt={item.alt}
-                        width="100%"
-                        height="100%"
-                        className="explore-image"
-                        loading="lazy"
-                      />
-                    </div>
-                  </figure>
-                </>
-              )}
+          <article
+            className={`explore-item ${index % 2 !== 0 ? "reverse" : ""}`}
+            key={index}
+          >
+            <figure className="explore-image-container">
+              <img
+                src={item.image}
+                alt={item.alt}
+                className="explore-image"
+                loading="lazy"
+              />
+            </figure>
+
+            <div className="explore-content">
+              <h2 className="explore-subtitle">{item.title}</h2>
+              <p className="explore-description">{item.intro}</p>
+              <div className="explore-footer">
+                <p className="explore-description m-0">
+                  <b>Want to know how to choose your LED screen?</b>
+                </p>
+                <Link
+                  to={item.link}
+                  onClick={handleScrollToTop}
+                  className="explore-button"
+                >
+                  Learn more <IoIosArrowDropright size={22} />
+                </Link>
+              </div>
             </div>
           </article>
         ))}
+      </div>
+
+      {/* Mobile View */}
+      <div className="mobile-view">
+        <div className="explore-scroll" ref={scrollRef}>
+          {productData.map((item, index) => (
+            <div className="explore-card" key={index}>
+              <img
+                src={item.image}
+                alt={item.alt}
+                className="explore-image"
+                loading="lazy"
+              />
+              <h3 className="explore-subtitle">{item.title}</h3>
+              <p className="explore-description two-lines">{item.intro}</p>
+              <Link
+                to={item.link}
+                onClick={handleScrollToTop}
+                className="explore-button"
+              >
+                Learn more <IoIosArrowDropright size={22} />
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        {/* Scroll Controls */}
+        <div className="scroll-controls">
+          <button className="scroll-btn" onClick={scrollLeft}>
+            <FaChevronLeft />
+          </button>
+          <button className="scroll-btn" onClick={scrollRight}>
+            <FaChevronRight />
+          </button>
+        </div>
       </div>
     </section>
   );

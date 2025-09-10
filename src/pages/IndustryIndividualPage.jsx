@@ -96,7 +96,7 @@ const Industry = () => {
       </div>
 
       {/* container 1 */}
-      <div className="product-image-container">
+      <div className="hero-image-container">
         <img
           src={productData?.image}
           alt={`${productData?.title}`}
@@ -104,9 +104,9 @@ const Industry = () => {
         />
       </div>
       <div className="my-4">
-        <h2 className="product-title text-black">{productData?.subtitle}</h2>
+        <h2 className="product-title text-black content-t-w">{productData?.subtitle}</h2>
         <p
-          className="product-description text-black"
+          className="product-description text-black content-d-w"
           dangerouslySetInnerHTML={{ __html: productData?.description }}
         ></p>
       </div>

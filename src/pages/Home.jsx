@@ -1,7 +1,7 @@
 import { useState } from "react";
+import "./Home.css"
 import heroImage from "../assets/heroImage.jpg";
 import innovateDisplayImage from "../assets/InnovateDisplayImage.png";
-
 import logo from "../assets/px-logo-web.png";
 import { Helmet } from "react-helmet";
 
@@ -435,11 +435,12 @@ const Home = () => {
           </Marquee>
         </div>
       </div>
+
       <div className="px-3">
         <div className="d-flex justify-content-between align-items-center">
           <h2 className="product-title text-white">Blogs</h2>
           <Link onClick={handleScrollToTop} to="/blog">
-            <button className="button-primary">
+            <button className="button-primary content-d-w">
               View All <MdKeyboardArrowRight />
             </button>
           </Link>
@@ -464,8 +465,8 @@ const Home = () => {
                         width="100%"
                       />
                     </div>
-                    <p className="service-text">{item.title}</p>
-                    <button className="blog-button">Read more</button>
+                    <p className="service-text content-t2-w">{item.title}</p>
+                    <button className="blog-button content-t-w">Read more</button>
                   </div>
                 </Link>
               </div>

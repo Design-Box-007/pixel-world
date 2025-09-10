@@ -229,14 +229,14 @@ const FAQ = ({ showAll = true }) => {
         </Helmet>
       }
       {showAll ?
-        <h1 className="faq-title">Frequently Asked Questions</h1> :
-        <h2 className="faq-title">Frequently Asked Questions</h2>
+        <h1 className="faq-title content-t-w">Frequently Asked Questions</h1> :
+        <h2 className="faq-title content-t-w">Frequently Asked Questions</h2>
       }
       <div className="faq-list">
         {(showAll ? faqs : faqs.slice(0, visibleCount)).map((faq, index) => (
           <div key={index} className="faq-item" onClick={() => toggleFAQ(index)}>
             <div className="d-flex justify-content-between align-items-center">
-              <h2 className="faq-question">{faq.question}</h2> {/* Use heading tag for SEO */}
+              <h2 className="faq-question content-t2-w">{faq.question}</h2> {/* Use heading tag for SEO */}
               <div className="text-primary">
                 {!faq.isOpen ? (
                   <IoIosArrowDown size={24} fontWeight={500} />
@@ -247,7 +247,7 @@ const FAQ = ({ showAll = true }) => {
             </div>
             {faq.isOpen && (
               <div
-                className="faq-answer"
+                className="faq-answer content-d-w"
                 dangerouslySetInnerHTML={{ __html: faq.answer }}
               />
             )}

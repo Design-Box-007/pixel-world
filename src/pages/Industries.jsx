@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Industries.css"
 import { Helmet } from 'react-helmet';
 import ExploreImageOne from '../assets/Industries/mainImage.jpg';
 import { Link } from 'react-router-dom';
@@ -21,7 +22,7 @@ const Industries = () => {
             </Helmet>
 
             <div className='hero-image-container rounded mb-4'>
-                <img src={ExploreImageOne} alt='Main LED Display' width="100%" height="100%" className='hero-image rounded' />
+                <img src={ExploreImageOne} alt='Main LED Display' width="100%" height="100%" className='hero-container' />
                 <div className="blog-image-overlay"></div>
                 <div className='blog-content'>
                     <div className='d-flex align-items-center flex-column'>
@@ -54,8 +55,8 @@ const Industries = () => {
                                             width="100%"
                                         />
                                     </div>
-                                    <h5 className='service-text'>{item.title}</h5>
-                                    <p className='service-description'>{item.subtitle}</p>
+                                    <h5 className='service-text content-t2-w'>{item.title}</h5>
+                                    <p className='content-d-w'>{item.subtitle}</p>
                                     <button className='blog-button'>Learn more</button>
                                 </div>
                             </Link>

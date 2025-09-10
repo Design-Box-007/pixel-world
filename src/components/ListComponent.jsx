@@ -7,7 +7,7 @@ const KioskFeatures = ({ kiosks = [] }) => {
           {(kiosk.cardImage || kiosk.cardTitle || kiosk.cardDescription) && (
             <div className="kiosk-image-card">
               {kiosk.cardImage && (
-                <div className="product-image-container">
+                <div className="hero-image-container">
                   <img
                     src={"https://placehold.co/400"}
                     alt={kiosk.cardAlt || "card image"}
@@ -18,7 +18,7 @@ const KioskFeatures = ({ kiosks = [] }) => {
               {(kiosk.cardTitle || kiosk.cardDescription) && (
                 <div>
                   {kiosk.cardTitle && (
-                    <h2 className="product-title">{kiosk.cardTitle}</h2>
+                    <h2 className="product-title content-t-w">{kiosk.cardTitle}</h2>
                   )}
                   {kiosk.cardDescription && (
                     <p
@@ -37,7 +37,7 @@ const KioskFeatures = ({ kiosks = [] }) => {
           {kiosk.titles?.length > 0 && (
             <>
               {kiosk.titles.map((title, i) => (
-                <h2 key={i}>{title}</h2>
+                <h2 key={i} className="content-t2-w product-list-title">{title}</h2>
               ))}
             </>
           )}
@@ -46,7 +46,7 @@ const KioskFeatures = ({ kiosks = [] }) => {
           {kiosk.features?.length > 0 && (
             <ul>
               {kiosk.features.map((feature, j) => (
-                <li key={j}>{feature}</li>
+                <li key={j} className="content-d-w">{feature}</li>
               ))}
             </ul>
           )}
@@ -55,7 +55,7 @@ const KioskFeatures = ({ kiosks = [] }) => {
           {kiosk.footers?.length > 0 && (
             <>
               {kiosk.footers.map((footer, k) => (
-                <p key={k}>{footer}</p>
+                <p key={k} className="content-t2-w product-title">{footer}</p>
               ))}
             </>
           )}
@@ -64,11 +64,11 @@ const KioskFeatures = ({ kiosks = [] }) => {
           {(kiosk.cardTitle2 || kiosk.cardDescription2) && (
             <div>
               {kiosk.cardTitle2 && (
-                <h2 className="product-title">{kiosk.cardTitle2}</h2>
+                <h2 className="product-title content-t2-w">{kiosk.cardTitle2}</h2>
               )}
               {kiosk.cardDescription2 && (
                 <p
-                  className="product-description"
+                  className="product-description content-d-w"
                   dangerouslySetInnerHTML={{
                     __html: kiosk.cardDescription2,
                   }}
