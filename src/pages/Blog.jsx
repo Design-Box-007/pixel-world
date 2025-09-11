@@ -122,8 +122,8 @@ const Blog = () => {
                         width="100%"
                       />
                     </div>
-                    <p className="service-text">{item.title}</p>
-                    <button className="blog-button">Read more</button>
+                    <p className="service-text content-t2-w">{item.title}</p>
+                    <button className="blog-button content-t2-w">Read more</button>
                   </div>
                 </Link>
               </div>

@@ -1,3 +1,5 @@
+import "./ListComponent.css"
+
 const KioskFeatures = ({ kiosks = [] }) => {
   return (
     <div className="kiosk-container">
@@ -18,7 +20,7 @@ const KioskFeatures = ({ kiosks = [] }) => {
               {(kiosk.cardTitle || kiosk.cardDescription) && (
                 <div>
                   {kiosk.cardTitle && (
-                    <h2 className="product-title content-t-w">{kiosk.cardTitle}</h2>
+                    <h2 className="kiosk-title content-t-w">{kiosk.cardTitle}</h2>
                   )}
                   {kiosk.cardDescription && (
                     <p
@@ -55,7 +57,7 @@ const KioskFeatures = ({ kiosks = [] }) => {
           {kiosk.footers?.length > 0 && (
             <>
               {kiosk.footers.map((footer, k) => (
-                <p key={k} className="content-t2-w product-title">{footer}</p>
+                <p key={k} className="content-t2-w">{footer}</p>
               ))}
             </>
           )}
@@ -64,7 +66,7 @@ const KioskFeatures = ({ kiosks = [] }) => {
           {(kiosk.cardTitle2 || kiosk.cardDescription2) && (
             <div>
               {kiosk.cardTitle2 && (
-                <h2 className="product-title content-t2-w">{kiosk.cardTitle2}</h2>
+                <h2 className=".kiosk-title content-t2-w">{kiosk.cardTitle2}</h2>
               )}
               {kiosk.cardDescription2 && (
                 <p

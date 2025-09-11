@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import logo from "../assets/px-logo-web.png";
+import "./Services.css"
 
 import OutdoorAdvertising1 from "../assets/ServiceItems/OutdoorAdvertising1.jpg";
 import OutdoorAdvertising2 from "../assets/ServiceItems/OutdoorAdvertising2.jpg";
@@ -32,6 +33,7 @@ import MallAndLocationBasedAdvertising9 from "../assets/ServiceItems/MallAndLoca
 import OccasionReady from "../components/OccasionReady";
 import { OurProjectLeft, OurProjectRight } from "../data/ProjectsData";
 import { Link } from "react-router-dom";
+import Gallery from "./GalleryPreview";
 
 const servicesData = [
   {
@@ -186,42 +188,33 @@ const Services = () => {
       </Helmet>
 
       <header className="services-hero">
-        <h1 className="services-title content-t-w">
-We are the No.1 leading LED screen supplier in Dubai, offering indoor, outdoor, customized LED displays, and large video walls for every event and space.        </h1>
-        <p className="services-description content-t2-w">
-          Your vision, powered by PixelWorld LED solutions.
-         </p>
+        <h1 className="services-title ">
+          PixelWorld – No.1 LED Screen Supplier in Dubai
+        </h1>
       </header>
 
-      <p className="services-description text-start text-justify content-d-w">
-        At PixelWorld, we are proud to be the leading LED screen supplier in
-        Dubai, offering cutting-edge technology and exceptional service to all
-        our clients. We understand that each client is unique, which is why we
-        provide personalized solutions designed to meet your specific needs.
-        From indoor LED video walls and customized LED screens to interactive
-        kiosks and digital signage, we are committed to delivering the best
-        products and services in the industry.
+      <p className="services-description text-start text-justify ">
+        At PixelWorld, we deliver cutting-edge LED display solutions across
+        Dubai, Abu Dhabi, and Sharjah. From indoor and outdoor video walls to
+        customized LED screens, interactive kiosks, and digital signage, we
+        create stunning visuals for every space and event.
         <br />
         <br />
-        Our portfolio includes diverse applications such as digital
-        advertisement displays, street and highway digital display
-        advertisements, ceiling LED screens, and floor LED screens. We also
-        provide high-quality LED signage solutions for a variety of
-        environments, including art museums, galleries, exhibitions,
-        restaurants, hotel lobbies, home theatres, and office receptions.
-        Whether you need displays for conference halls, meeting rooms, corporate
-        events, event staging and rentals, or LED strips, PixelWorld is your
-        trusted partner for every visual need.
+        Our portfolio spans digital advertising displays, event staging,
+        rentals, LED signage for hotels, restaurants, offices, galleries,
+        exhibitions, and more. With reliable technology, tailored designs, and
+        ongoing maintenance, PixelWorld is your trusted partner for impactful
+        visual experiences.
         <br />
         <br />
-        We have successfully delivered numerous projects across Dubai, Abu
+        {/* We have successfully delivered numerous projects across Dubai, Abu
         Dhabi, and Sharjah, and our clients rely on us for innovative, reliable,
         and visually striking solutions. We also pride ourselves on providing
         top-notch maintenance services, ensuring that each product continues to
         perform at its best over time. At PixelWorld, we’re not just a LED
         screen supplier – we’re a partner in creating unforgettable experiences.
         <br />
-        <br />
+        <br /> */}
         Explore our recent projects and see why PixelWorld is the best choice
         for your LED screen needs.
       </p>
@@ -257,8 +250,8 @@ We are the No.1 leading LED screen supplier in Dubai, offering indoor, outdoor, 
         ))}
       </section> */}
 
-      <div className="row">
-        <h2 className="services-title my-5 content-t-w">Our Projects</h2>
+      {/* <div className="row">
+        <h2 className="services-title my-3 content-t-w">Our Projects</h2>
         {OurProjectLeft.map((project, index) => (
           <div className="col-lg-4 col-md-6 mb-4">
             <div key={index} className="our-projects-image-container w-100">
@@ -295,7 +288,10 @@ We are the No.1 leading LED screen supplier in Dubai, offering indoor, outdoor, 
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
+
+      <Gallery/>
+      
       <section className="my-5">
         <h2 className="services-subtitle text-center content-t-w">
           Why Choose Us?
@@ -343,7 +339,6 @@ We are the No.1 leading LED screen supplier in Dubai, offering indoor, outdoor, 
         <br />
         Let’s showcase your brand alongside our esteemed clients and
         <br /> make your success part of our achievements!
-        
       </p>
     </div>
   );

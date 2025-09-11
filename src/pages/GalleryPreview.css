@@ -1,0 +1,65 @@
+/* Image Container */
+.our-projects-image-container {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.our-projects-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.our-projects-image-container:hover .our-projects-image {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.hero-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.our-projects-image-container:hover .hero-image-overlay {
+  opacity: 1;
+}
+
+/* Text on Image */
+.our-projects-content {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+}
+
+ 
+/* Modal Background with Blur */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 15, 0.4); /* semi-transparent */
+  backdrop-filter: blur(8px);        /* 🔹 blur the background */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  cursor: zoom-out;
+  transition: backdrop-filter 0.3s ease, background 0.3s ease;
+}
+
+
+/* Modal Image */
+.modal-image {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.6);
+  cursor: default;
+}

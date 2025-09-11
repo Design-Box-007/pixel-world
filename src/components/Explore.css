@@ -1,6 +1,6 @@
  /* section */
 .explore {
-  padding: 60px 20px;
+  padding: 20px 10px;
 }
 
 .explore-title {
@@ -23,6 +23,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .explore-item.reverse {
@@ -48,6 +50,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 400px;
+ 
 }
 
 .explore-subtitle {
@@ -170,5 +173,8 @@
   }
   .explore-title{
     font-size: 30px;
+  }
+  .explore-title{
+    margin-bottom: 10px;
   }
 }

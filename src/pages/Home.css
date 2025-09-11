@@ -1,3 +1,12 @@
+.hero-button {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-button button {
+  font-size: 15px;
+}
+
 .home-about {
   display: flex;
   justify-content: space-between;
@@ -17,20 +26,20 @@
   justify-content: space-between;
 }
 
-.home-about-left a{
+.home-about-left a {
   color: var(--primary-color);
   text-decoration: none;
-  text-align: right; 
+  text-align: right;
   font-size: 20px;
 }
 
-.home-about-left h3{
+.home-about-left h3 {
   font-size: 35px;
   font-weight: 300;
 }
- .home-about-left {
+.home-about-left {
   display: flex;
- }
+}
 
 .home-about-left h1 {
   font-size: 50px;
@@ -54,7 +63,7 @@
   font-size: 20px;
 }
 
-.home-about-button{
+.home-about-button {
   display: flex;
   justify-content: end;
 }
@@ -144,9 +153,7 @@
   color: var(--white-color);
 }
 
-
 /* 3-containter */
-
 
 .our-projects-container {
   background: var(--white-color);
@@ -168,7 +175,7 @@
   text-align: center;
 }
 
-.our-projects-image-container {
+.our-projects-home-container {
   position: relative;
   width: 400px;
   height: 200px;
@@ -198,13 +205,11 @@
   z-index: 1;
 }
 
-
-
 @media (max-width: 768px) {
   .home-about {
     flex-direction: column;
     gap: 30px;
-    padding: 20px;
+    padding: 10px;
   }
 
   .home-about-right img {
@@ -214,7 +219,7 @@
 
   .home-about-left h3 {
     font-size: 20px;
-    margin-bottom: 30px;
+    
   }
   .home-about-left h1 {
     font-size: 22px;
@@ -225,24 +230,23 @@
     font-size: 14px;
   }
 
-  
-
   .home-about-button button {
     font-size: 15px;
     width: 120px;
   }
 
   /* 2-container */
-  .occasionReady-title{
-    font-size: 30px;
-    margin-bottom: 20px;
+  .occasionReady-title {
+    font-size: 20px;
   }
-  .occasionReady-description{
-    font-size: 15px;
+  .occasionReady-description {
+    font-size: 12px;
   }
+  
 
   /* 3-container */
   .our-project-title {
     font-size: 25px;
   }
+
 }

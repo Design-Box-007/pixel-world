@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./FAQ.css"
 import { IoIosArrowDown, IoIosArrowUp, IoIosMore } from 'react-icons/io';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';

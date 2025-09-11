@@ -1,0 +1,50 @@
+
+.kiosk-container {
+  color: black;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+.kiosk-image-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kiosk-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: black;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+.kiosk-card li {
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.kiosk-card p {
+  font-size: 20px;
+}
+
+.kiosk-item {
+  margin: 8px 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+occasionReady .kiosk-footer {
+  font-size: 0.9rem;
+  color: black;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px){
+  .kiosk-card li{
+    font-size: 15px;
+  }.kiosk-title{
+    font-size: 20px;
+  }
+}

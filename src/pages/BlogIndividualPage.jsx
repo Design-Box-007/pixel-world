@@ -104,7 +104,7 @@ const BlogIndividualPage = () => {
                     />
                 </div>
             </div>
-            <div className="product-image-container">
+            <div className="product-hero-container">
                 <img
                     src={productData?.image}
                     alt={`${productData?.title}`}

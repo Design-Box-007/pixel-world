@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AboutUs.css"
+import "./AboutUs.css";
 import innovateDisplayImage from "../assets/InnovateDisplayImage.png";
 import IlliminationImage from "../assets/IlliminationImage.png";
 import AboutUsHome from "../assets/AboutUsHome.jpg";
@@ -115,68 +115,6 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="home-about">
-            <div className="home-about-right">
-              <img src={AboutUsHome} alt="aboutUs" />
-            </div>
-
-            <div className="home-about-left">
-              <h1>Why Choose PixelWorld?</h1>
-
-              {/* First expandable details */}
-              <div>
-                <p>
-                  At PixelWorld, we pride ourselves on delivering not just
-                  top-quality LED displays and customised digital kiosks, but
-                  also exceptional customer support and reliable maintenance
-                  services. With a strong business presence in Dubai and a
-                  well-established network across the Gulf region—including the
-                  UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain, and beyond—we
-                  ensure prompt and efficient service wherever you are.
-                </p>
-                <p>
-                  Our commitment to excellence starts with providing premium,
-                  durable, and energy-efficient products that guarantee vibrant
-                  visuals and long-lasting performance in any environment.
-                  Whether it’s indoor or outdoor LED screens, rental solutions,
-                  or interactive kiosks, we source only from trusted
-                  manufacturers and conduct rigorous quality checks to maintain
-                  industry-leading standards.
-                </p>
-                <div
-                  className={`details-container ${showDetails ? "show" : ""}`}
-                >
-                  <p>
-                    Beyond delivering cutting-edge technology, PixelWorld
-                    supports our customers through every stage— from
-                    consultation and professional installation to ongoing
-                    maintenance and technical assistance. Our dedicated support
-                    team ensures your systems run smoothly, minimizing downtime
-                    and maximizing your investment’s value.
-                  </p>
-                  <p>
-                    Choosing PixelWorld means partnering with a company that
-                    understands the diverse needs of businesses across retail,
-                    hospitality, education, corporate sectors, and more. We
-                    tailor our solutions to fit your unique requirements while
-                    providing scalable, future-ready technology backed by
-                    dependable service.
-                  </p>
-                  <p>
-                    Trust PixelWorld to be your go-to provider for customised
-                    LED and kiosk solutions across the Gulf, offering
-                    unparalleled quality, expert support, and a seamless
-                    customer experience.
-                  </p>
-                </div>
-              </div>
-               <div className="home-about-button">
-              <button onClick={() => setShowDetails(!showDetails)}>
-                {showDetails ? "Hide" : "Learn More"}
-              </button>
-              </div>
-            </div>
-          </div>
           {/* <div className="mb-5">
             <h2 className="innovateDisplay-section-title">
               Our Area of Expertise
@@ -270,6 +208,65 @@ const AboutUs = () => {
           </div> */}
         </div>
       </section>
+
+      <div className="home-about">
+        <div className="home-about-right">
+          <img src={AboutUsHome} alt="aboutUs" />
+        </div>
+
+        <div className="home-about-left">
+          <h1>Why Choose PixelWorld?</h1>
+
+          {/* First expandable details */}
+          <div>
+            <p>
+              At PixelWorld, we pride ourselves on delivering not just
+              top-quality LED displays and customised digital kiosks, but also
+              exceptional customer support and reliable maintenance services.
+              With a strong business presence in Dubai and a well-established
+              network across the Gulf region—including the UAE, Saudi Arabia,
+              Oman, Kuwait, Qatar, Bahrain, and beyond—we ensure prompt and
+              efficient service wherever you are.
+            </p>
+            <p>
+              Our commitment to excellence starts with providing premium,
+              durable, and energy-efficient products that guarantee vibrant
+              visuals and long-lasting performance in any environment. Whether
+              it’s indoor or outdoor LED screens, rental solutions, or
+              interactive kiosks, we source only from trusted manufacturers and
+              conduct rigorous quality checks to maintain industry-leading
+              standards.
+            </p>
+            <div className={`details-container ${showDetails ? "show" : ""}`}>
+              <p>
+                Beyond delivering cutting-edge technology, PixelWorld supports
+                our customers through every stage— from consultation and
+                professional installation to ongoing maintenance and technical
+                assistance. Our dedicated support team ensures your systems run
+                smoothly, minimizing downtime and maximizing your investment’s
+                value.
+              </p>
+              <p>
+                Choosing PixelWorld means partnering with a company that
+                understands the diverse needs of businesses across retail,
+                hospitality, education, corporate sectors, and more. We tailor
+                our solutions to fit your unique requirements while providing
+                scalable, future-ready technology backed by dependable service.
+              </p>
+              <p>
+                Trust PixelWorld to be your go-to provider for customised LED
+                and kiosk solutions across the Gulf, offering unparalleled
+                quality, expert support, and a seamless customer experience.
+              </p>
+            </div>
+          </div>
+          <div className="home-about-button">
+            <button onClick={() => setShowDetails(!showDetails)}>
+              {showDetails ? "Hide" : "Learn More"}
+            </button>
+          </div>
+        </div>
+      </div>
 
       <section className="illumination-about">
         <div className="my-5">

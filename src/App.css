@@ -460,33 +460,6 @@
   border-radius: 12px;
 }
 
-.faq-title {
-  font-weight: 500;
-  font-size: 28px;
-  padding-top: 30px;
-  margin-bottom: 20px;
-  color: var(--black-color);
-}
-
-.faq-item {
-  margin-bottom: 15px;
-  background: var(--white-color);
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-}
-
-.faq-question {
-  color: var(--black-color);
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.faq-answer {
-  font-size: 18px;
-  font-weight: 300;
-  margin: 10px 0;
-}
 
 .footer {
   background: white;
@@ -615,25 +588,8 @@
   padding: 0 20px;
 }
 
-.services-hero {
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.services-title {
-  font-size: 50px;
-  font-weight: 500;
-  text-align: center;
-}
 
-.services-description {
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
-}
 
 .services-bg-title {
   font-family: Poppins;
@@ -664,11 +620,7 @@
   background: linear-gradient(90deg, #6a77ff 0%, #404799 100%);
 }
 
-.services-subtitle {
-  font-size: 84px;
-  font-weight: 500;
-  margin-bottom: 30px;
-}
+
 
 .service-item {
   background: white;
@@ -716,12 +668,7 @@
   padding: 0 20px;
 }
 
-.faq {
-  margin: 20px 0;
-  padding: 0 20px;
-  padding-bottom: 20px;
-  background-color: white;
-}
+
 
 .projects-title {
   font-size: 48px;
@@ -993,13 +940,13 @@
 
 .contact-subtitle {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 300;
   color: var(--white-color);
 }
 
 .contact-description {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .contact-button {
@@ -1020,11 +967,17 @@
   border-radius: 8px;
   color: var(--white-color);
   margin-bottom: 40px;
+  font-weight: 200;
 }
 
 .contact-title {
   font-size: 40px;
   color: var(--white-color);
+  font-weight: 300;
+}
+
+.contact-email{
+  font-weight: 200;
 }
 
 .hr-line {
@@ -1032,56 +985,36 @@
 }
 
 .product-page {
-  padding: 40px 20px;
+  padding: 30px 10px;
 }
 
-.kiosk-container {
-  color: black;
-  padding: 10px 10px;
-  border-radius: 12px;
-  margin: 20px auto;
-}
-
-.kiosk-image-card {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.kiosk-title {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: black;
-}
-
-.kiosk-card li {
-  line-height: 40px;
-  font-size: 20px;
-}
-
-.kiosk-card p {
-  font-size: 20px;
-}
-
-.kiosk-item {
-  margin: 8px 0;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-occasionReady .kiosk-footer {
-  font-size: 0.9rem;
-  color: black;
-  font-size: 20px;
-  margin-top: 10px;
-}
 .industry-main {
   padding-left: 20px;
   padding-right: 20px;
   background-color: white;
 }
+.contact-phone{
+  font-weight: 200;
+}
+.contact-address{
+  font-weight: 200;
+}
+
+.footer-email a {
+  color: inherit;        /* matches footer text color */
+  text-decoration: none; /* remove underline */
+  font-weight: 500;
+}
+
+.footer-email a:hover {
+  text-decoration: underline;
+  color: #0f2e53; /* your theme color */
+}
+
+
 
 /* 📲 Tablet responsiveness */
-@media (min-width: 769px) and (max-width: 1023px) {
+/* @media (min-width: 769px) and (max-width: 1023px) {
   .home-about {
     display: flex;
     flex-direction: column;
@@ -1106,17 +1039,21 @@ occasionReady .kiosk-footer {
   .home-about-right img {
     max-width: 90%;
   }
-}
+} */
 @media (max-width: 768px){
 .hero-image-container {
     height: 50vh;
   }
   .product-title {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 2.4rem;
+    text-decoration: none;
+    margin-top: 20px;
   }
   .services-title {
     font-size: 40px;
+  }.contact-email {
+    margin-top: 10px;
   }
 }
 /* Responsive adjustments */
@@ -1277,10 +1214,6 @@ occasionReady .kiosk-footer {
     font-size: 32px;
   }
 
-  .faq-question {
-    color: var(--black-color);
-    font-size: 18px;
-  }
 
   .footer-title {
     font-size: 52px;

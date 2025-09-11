@@ -12,11 +12,12 @@ import Product from "./pages/Product";
 import BlogIndividualPage from "./pages/BlogIndividualPage";
 import Blog from "./pages/Blog";
 // import Products from './pages/Products';
-import ContactUs from "./pages/ContactUs";
 import Industries from "./pages/Industries";
 import Industry from "./pages/IndustryIndividualPage";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import WhatsappProfileImage from "./assets/whatsapp-profile.jpg";
+import ContactUs from "./components/ContectUs";
+import ScrollToTopButton from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -33,10 +34,11 @@ function App() {
           <Route path="/product/:productKey" element={<Product />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:blogKey" element={<BlogIndividualPage />} />
-          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/contact" />
           <Route path="/faq" element={<FAQ />} />
         </Routes>
       </div>
+      <ScrollToTopButton />
       <FloatingWhatsApp
         phoneNumber="+971 58 532 1473"
         allowClickAway
@@ -48,6 +50,7 @@ function App() {
       <div className="contactUs">
         <ContactUs />
       </div>
+
       <Footer />
     </BrowserRouter>
   );

@@ -151,6 +151,7 @@ const Home = () => {
         <meta name="twitter:image" content={heroImage} />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
+      
       <div className="hero-section">
         <div className="hero-image-container">
           {/* <img src={heroImage} alt='heroImage' width="100%" height="100%" className='hero-image' /> */}
@@ -175,14 +176,14 @@ const Home = () => {
                 No. 1 Dubai LED Screen Company, with indoor and outdoor LED
                 screens.
               </h1>
-              <div className="d-flex gap-1 justify-content-center flex-wrap">
+              <div className="hero-button">
                 <a
                   href="https://wa.me/+971585321473"
                   className="text-decoration-none"
                   target="_blank"
                 >
                   <button className="buttonTwo d-flex align-items-center gap-2">
-                    <FaWhatsapp size={50} /> +971585321473
+                    <FaWhatsapp size={30} className="whatsapp"/> +971585321473
                   </button>
                 </a>
                 <a
@@ -191,7 +192,7 @@ const Home = () => {
                   target="_blank"
                 >
                   <button className="buttonTwo d-flex align-items-center gap-2">
-                    <FaWhatsapp size={50} /> +971555131473
+                    <FaWhatsapp size={30} /> +971555131473
                   </button>
                 </a>
               </div>
@@ -269,7 +270,7 @@ const Home = () => {
           We deliver cutting-edge LED display solutions with seamless service
           from concept to completion.
         </div>
-        <div className="row my-5">
+        <div className="row my-2">
           {/* <div className='col-md-6 mb-4'>
                         <div className='occasionReady-card'>
                             <div className='d-flex justify-content-between align-items-center text-white'>
@@ -398,7 +399,7 @@ const Home = () => {
         <div className="my-3">
           <Marquee direction="left" pauseOnHover={true} className="mb-3">
             {OurProjectLeft.map((project, index) => (
-              <div key={index} className="our-projects-image-container">
+              <div key={index} className="our-projects-home-container">
                 <img
                   src={project.image}
                   alt="Image one"
@@ -417,7 +418,7 @@ const Home = () => {
 
           <Marquee direction="right" pauseOnHover={true} className="mb-3">
             {OurProjectRight.map((project, index) => (
-              <div key={index} className="our-projects-image-container">
+              <div key={index} className="our-projects-home-container">
                 <img
                   src={project.image}
                   alt="Image one"

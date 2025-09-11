@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./Product.css"
 import { useParams } from "react-router-dom"; // React Router hook
 import { Helmet } from "react-helmet";
 import productData from "../data/productsData";
@@ -90,7 +91,7 @@ const Product = () => {
         </Helmet>
       )}
       <div className="d-flex justify-content-between align-items-center">
-        <h1 className="product-title-h1 w-75 ">{product?.title}</h1>
+        <h1 className="product-title w-75 ">{product?.title}</h1>
         <div>
           <IoShareSocial
             size={28}
@@ -100,7 +101,7 @@ const Product = () => {
           />
         </div>
       </div>
-      <div className="product-image-container">
+      <div className="hero-image-container">
         <img
           src={product?.image}
           alt={`${product?.title}`}
@@ -126,7 +127,7 @@ const Product = () => {
 
             {/* Recursive subPoints */}
             {item.subPoints && (
-              <ul>
+              <ul className="ul-product">
                 {item.subPoints.map((point, subIndex) => (
                   <li key={subIndex} className="product-description">
                     {typeof point === "string" ? (
@@ -135,7 +136,7 @@ const Product = () => {
                       <>
                         <div>{point.title}</div>
                         {point.subPoints && (
-                          <ul>
+                          <ul className="ul-product">
                             {point.subPoints.map((nested, nestedIndex) => (
                               <li key={nestedIndex}>{nested}</li>
                             ))}

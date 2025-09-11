@@ -196,14 +196,14 @@ const Header = () => {
             to="/projects"
             style={{ color: navColor }}
           >
-            Projects
+            Gallery
           </Nav.Link><Nav.Link
             className={`nav-link ${activeLink === '/blog' ? 'active' : ''}`}
             as={Link}
             to="/blog"
             style={{ color: navColor }}
           >
-            Blog
+            Blogs
           </Nav.Link>
           {/* <Nav.Link
             className={`nav-link ${activeLink === '/services' ? 'active' : ''}`}
