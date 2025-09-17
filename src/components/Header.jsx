@@ -92,53 +92,53 @@ const Header = () => {
   };
 
 
-  if (isLoading) {
-    return (
-      <div
-        className={`loader-container ${fadeOut ? 'fade-out' : ''}`}
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          backgroundColor: 'black',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          zIndex: 2000,
-        }}
-      >
-        <video
-          src={introVideo}
-          autoPlay
-          muted
-          playsInline
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            zIndex: 1,
-          }}
-        />
-        <h2
-          className="loader-text"
-          style={{
-            fontSize: '2rem',
-            color: 'white',
-            position: 'relative',
-            zIndex: 2,
-            textAlign: 'center',
-          }}
-        >
-          Experience High Quality Led Screens <br /> and Digital Displays with Pixel World
-        </h2>
-      </div>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <div
+  //       className={`loader-container ${fadeOut ? 'fade-out' : ''}`}
+  //       style={{
+  //         position: 'fixed',
+  //         top: 0,
+  //         left: 0,
+  //         width: '100%',
+  //         height: '100%',
+  //         backgroundColor: 'black',
+  //         display: 'flex',
+  //         justifyContent: 'center',
+  //         alignItems: 'center',
+  //         zIndex: 2000,
+  //       }}
+  //     >
+  //       <video
+  //         src={introVideo}
+  //         autoPlay
+  //         muted
+  //         playsInline
+  //         style={{
+  //           position: 'absolute',
+  //           top: 0,
+  //           left: 0,
+  //           width: '100%',
+  //           height: '100%',
+  //           objectFit: 'cover',
+  //           zIndex: 1,
+  //         }}
+  //       />
+  //       <h2
+  //         className="loader-text"
+  //         style={{
+  //           fontSize: '2rem',
+  //           color: 'white',
+  //           position: 'relative',
+  //           zIndex: 2,
+  //           textAlign: 'center',
+  //         }}
+  //       >
+  //         Experience High Quality Led Screens <br /> and Digital Displays with Pixel World
+  //       </h2>
+  //     </div>
+  //   );
+  // }
 
   return (
     <Navbar

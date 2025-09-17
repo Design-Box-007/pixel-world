@@ -1,11 +1,8 @@
-import Product1 from "../assets/Products/1.jpg";
-import Product2 from "../assets/Products/2.jpg";
-import Product3 from "../assets/Products/3.jpg";
-import Product4 from "../assets/Products/4.jpg";
+import images from "./images";
 
 const productData = [
   {
-    image: Product1,
+    image: images.homeDigitalKiosk,
     title: "Digital Kiosks",
     metaTitle:
       "Digital Kiosk Display | Kiosk Machine Dubai | Electronic Digital Display Supplier",
@@ -129,7 +126,7 @@ const productData = [
     ],
   },
   {
-    image: Product2,
+    image: images.homeIndoorScreens,
     title: "LED Screens",
     metaTitle:
       "LED Screen | Outdoor LED Screen Supplier in Dubai | LED Display Screen Supplier",
@@ -293,7 +290,7 @@ const productData = [
     ],
   },
   {
-    image: Product4,
+    image: images.homeOutdoorScreens,
     title: "Outdoor Led Solutions",
     metaTitle:
       "Pixel World LED Lightings – LED Screen Components & Installation",
@@ -422,7 +419,7 @@ const productData = [
     ],
   },
   {
-    image: Product3,
+    image: images.homeLightings,
     title: "LED Lightings",
     metaTitle: "Pixel World LED Lightings – LED Light Suppliers in Dubai",
     metasubPoints:
