@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Product.css"
+import "./Product.css";
 import { useParams } from "react-router-dom"; // React Router hook
 import { Helmet } from "react-helmet";
 import productData from "../data/productsData";
@@ -51,39 +51,103 @@ const Product = () => {
 
   const shareableLink = `https://www.pixelworld.ae/product/${productKey}`;
 
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product?.title,
-    description: product?.description,
-    image: product?.image,
-    url: shareableLink,
-    brand: {
-      "@type": "Brand",
-      name: "Pixelworld",
-    },
-    offers: {
-      "@type": "Offer",
-      price: product?.price || "0.00",
-      priceCurrency: "AED", // Replace with the appropriate currency code
-      availability: "https://schema.org/InStock", // Update if the product is out of stock
-      url: shareableLink,
-    },
-  };
+  const schemaData = product?.telephone
+    ? {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        name: "Pixelworld LED Lightings",
+        url: "https://www.pixelworld.ae",
+        logo: product?.logo,
+        image: product?.image,
+        description: product?.description,
+        telephone: product?.telephone,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress:
+            "408, Apartment M02, Persia Cluster, International City",
+          addressLocality: "Dubai",
+          addressCountry: "UAE",
+        },
+        sameAs: [
+          "https://www.instagram.com/pixelworldfzc",
+          "https://x.com/Pixelworldfzc",
+          "https://www.facebook.com/profile.php?id=61573776366139",
+        ],
+        makesOffer: {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Product",
+            name: product?.title || "Outdoor LED Screens",
+            description:
+              product?.description ||
+              "Durable, weatherproof outdoor LED displays designed for advertising, events, malls, stadiums, and smart city projects.",
+            brand: "Pixelworld",
+            category: "LED Display",
+            url:
+              shareableLink || "https://www.pixelworld.ae/product/led-supplies",
+            image:
+              product?.image ||
+              "https://www.pixelworld.ae/assets/images/outdoor-led-screens.jpg",
+          },
+          priceCurrency: "AED",
+          availability: "https://schema.org/InStock",
+        },
+      }
+    : {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        name: product?.title,
+        description: product?.description,
+        image: product?.image,
+        url: shareableLink,
+        brand: {
+          "@type": "Brand",
+          name: "Pixelworld",
+        },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "AED",
+          availability: "https://schema.org/InStock",
+          url: shareableLink,
+        },
+      };
 
   return (
     <div className="container-fluid">
       {product && (
         <Helmet>
-          <title>{product.metaTitle}</title>
-          <meta name="description" content={product?.metaDescription} />
-          <meta property="og:title" content={product?.title} />
-          <meta property="og:description" content={product?.description} />
-          <meta name="keywords" content={product?.keywords?.join(", ")} />
-          <meta property="og:image" content={product?.image} />
+          <title>{product?.metaTitle}</title>
+          <meta
+            name="description"
+            content={
+              product?.metaDescription ||
+              "PixelWorld digital kiosks in Dubai, UAE."
+            }
+          />
+          <meta
+            name="keywords"
+            content={
+              product?.keywords?.length
+                ? product.keywords.join(", ")
+                : "digital kiosk Dubai, interactive kiosk UAE, PixelWorld kiosks"
+            }
+          />
+          <link rel="canonical" href={shareableLink} />
+
+          {/* Open Graph / Facebook */}
+          <meta property="og:type" content="product" />
+          <meta property="og:title" content={product?.metaTitle} />
+          <meta property="og:description" content={product?.ogDescription} />
           <meta property="og:url" content={shareableLink} />
-          <meta name="twitter:title" content={product?.title} />
-          <meta name="twitter:description" content={product?.description} />
+          <meta property="og:image" content={product?.image} />
+
+          {/* Twitter */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={product?.metaTitle} />
+          <meta
+            name="twitter:description"
+            content={product?.twitterDescription}
+          />
           <meta name="twitter:image" content={product?.image} />
           <script type="application/ld+json">
             {JSON.stringify(schemaData)}
@@ -110,57 +174,59 @@ const Product = () => {
       </div>
 
       <div className="product-page">
-      {/* Intro paragraph */}
-      {product?.intro && (
-        <p className="product-description">{product.intro}</p>
-      )}
- 
-      {/* Numbered or bullet list */}
-      <ol className="product-title">
-        {product?.products.map((item, index) => (
-          <li key={index}>
-            <div className="product-title">{item.title}</div>
-            {item.intro && <p className="product-description">{item.intro}</p>}
-            {item.description && (
-              <p className="product-description">{item.description}</p>
-            )}
+        {/* Intro paragraph */}
+        {product?.intro && (
+          <p className="product-description">{product.intro}</p>
+        )}
 
-            {/* Recursive subPoints */}
-            {item.subPoints && (
-              <ul className="ul-product">
-                {item.subPoints.map((point, subIndex) => (
-                  <li key={subIndex} className="product-description">
-                    {typeof point === "string" ? (
-                      point
-                    ) : (
-                      <>
-                        <div>{point.title}</div>
-                        {point.subPoints && (
-                          <ul className="ul-product">
-                            {point.subPoints.map((nested, nestedIndex) => (
-                              <li key={nestedIndex}>{nested}</li>
-                            ))}
-                          </ul>
-                        )}
-                      </>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            )}
-               
-            {item.conclusion && (
-              <p className="product-description">{item.conclusion}</p>
-            )}
-          </li>
-        ))}
-      </ol>
+        {/* Numbered or bullet list */}
+        <ol className="product-title">
+          {product?.products.map((item, index) => (
+            <li key={index}>
+              <div className="product-title">{item.title}</div>
+              {item.intro && (
+                <p className="product-description">{item.intro}</p>
+              )}
+              {item.description && (
+                <p className="product-description">{item.description}</p>
+              )}
 
-      {/* Outro / conclusion paragraph */}
-      {product?.conclusion && (
-        <p className="product-description mt-4">{product.conclusion}</p>
-      )}
- </div>
+              {/* Recursive subPoints */}
+              {item.subPoints && (
+                <ul className="ul-product">
+                  {item.subPoints.map((point, subIndex) => (
+                    <li key={subIndex} className="product-description">
+                      {typeof point === "string" ? (
+                        point
+                      ) : (
+                        <>
+                          <div>{point.title}</div>
+                          {point.subPoints && (
+                            <ul className="ul-product">
+                              {point.subPoints.map((nested, nestedIndex) => (
+                                <li key={nestedIndex}>{nested}</li>
+                              ))}
+                            </ul>
+                          )}
+                        </>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {item.conclusion && (
+                <p className="product-description">{item.conclusion}</p>
+              )}
+            </li>
+          ))}
+        </ol>
+
+        {/* Outro / conclusion paragraph */}
+        {product?.conclusion && (
+          <p className="product-description mt-4">{product.conclusion}</p>
+        )}
+      </div>
       <div className="mb-4">
         {/* <h2 className='product-title'>Conclusion</h2>
                 <p className='product-description'>{product?.description}</p> */}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Home.css"
+import "./Home.css";
 import heroImage from "../assets/heroImage.jpg";
 import innovateDisplayImage from "../assets/InnovateDisplayImage.png";
 import logo from "../assets/px-logo-web.png";
@@ -30,8 +30,16 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { OurProjectLeft, OurProjectRight } from "../data/ProjectsData";
 import HeroVideo from "../assets/hero-clip.mp4";
 import ContactUs from "./ContactUs";
-import { BiArrowFromLeft, BiArrowToLeft, BiSolidArrowToRight } from "react-icons/bi";
-import { BsArrow90DegRight, BsArrowBarRight, BsArrowDownRightCircleFill } from "react-icons/bs";
+import {
+  BiArrowFromLeft,
+  BiArrowToLeft,
+  BiSolidArrowToRight,
+} from "react-icons/bi";
+import {
+  BsArrow90DegRight,
+  BsArrowBarRight,
+  BsArrowDownRightCircleFill,
+} from "react-icons/bs";
 
 // const cardData = [
 //   {
@@ -90,16 +98,15 @@ import { BsArrow90DegRight, BsArrowBarRight, BsArrowDownRightCircleFill } from "
 //   // },
 // ];
 
-
- const specialties = [
-    "Customised LED video walls for exhibitions and events",
-    "Affordable indoor LED screens for retail stores and corporate spaces",
-    "High-brightness outdoor LED screens for impactful advertising",
-    "Interactive LED screens for customer engagement",
-    "Customised software for digital kiosks, enabling smart, user-friendly experiences",
-    "LED screen rentals for stages, conferences, and temporary setups",
-    "LED signage for shop fronts, malls, and commercial venues",
-  ];
+const specialties = [
+  "Customised LED video walls for exhibitions and events",
+  "Affordable indoor LED screens for retail stores and corporate spaces",
+  "High-brightness outdoor LED screens for impactful advertising",
+  "Interactive LED screens for customer engagement",
+  "Customised software for digital kiosks, enabling smart, user-friendly experiences",
+  "LED screen rentals for stages, conferences, and temporary setups",
+  "LED signage for shop fronts, malls, and commercial venues",
+];
 const Home = () => {
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -111,25 +118,28 @@ const Home = () => {
 
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Pixelworld",
-    url: "https://www.pixelworld.ae",
-    logo: { logo }, // Replace with your logo URL
-    description:
-      "Discover Pixelworld's innovative LED screen advertising solutions. From indoor and outdoor LED screens to traditional advertising, we bring your brand to life.",
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: "+971585321473", // Replace with your contact number
-      contactType: "Customer Service",
-      areaServed: "AE",
-      availableLanguage: ["English", "Arabic"],
+    "@type": "LocalBusiness",
+    name: "PixelWorld",
+    image: "https://www.pixelworld.ae/images/logo.png",
+    "@id": "https://www.pixelworld.ae",
+    url: "https://www.pixelworld.ae/",
+    telephone: "+971585321473",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "408, Apartment M02, Persia Cluster, International City",
+      addressLocality: "Dubai",
+      addressCountry: "UAE",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "25.2048",
+      longitude: "55.2708",
+    },
+    openingHours: "Mo-Su 09:00-21:00",
     sameAs: [
-      "https://www.facebook.com/share/1FUH2at763/?mibextid=wwXIfr",
-      "https://www.instagram.com/pixelworldfzc?igsh=OHMwc3Zpazg3Y25y",
-      // "https://www.linkedin.com/company/pixelworld",
-      "https://medium.com/@pixelworldfzc",
-      "https://www.blogger.com/u/2/blog/posts/4721417252822204922",
+      "https://www.facebook.com/profile.php?id=61573776366139",
+      "https://x.com/Pixelworldfzc",
+      "https://www.instagram.com/pixelworldfzc",
     ],
   };
 
@@ -137,21 +147,50 @@ const Home = () => {
     <div className="home">
       <Helmet>
         <title>
-          LED Screen Suppliers in Dubai | Display Screen | LED Display
+          PixelWorld | LED Screen Supplier in Dubai | Indoor & Outdoor LED
+          Displays & Digital Kiosks
         </title>
         <meta
           name="description"
-          content="Leading outdoor LED screen supplier in Dubai. High-quality LED screen displays and display screens. Call now for the best LED solutions in Dubai!"
+          content="PixelWorld is a leading LED screen supplier in Dubai, UAE. We provide indoor & outdoor LED displays, video walls, and customised digital kiosk solutions for retail, events, exhibitions, and more."
         />
         <meta
           name="keywords"
-          content="led screen suppliers in dubai, outdoor led screen supplier in dubai, display screen, led screen display"
+          content="LED screen Dubai, LED display supplier UAE, digital kiosk Dubai, indoor LED screens, outdoor LED screens, LED video walls Dubai, custom LED displays UAE, PixelWorld Dubai"
         />
-        <link rel="canonical" href="https://www.pixelworld.ae" />
-        <meta name="twitter:image" content={heroImage} />
+        <link rel="canonical" href="https://www.pixelworld.ae/" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="PixelWorld | LED Screen Supplier in Dubai | Indoor & Outdoor LED Displays"
+        />
+        <meta
+          property="og:description"
+          content="Premium LED display & digital kiosk solutions in Dubai. PixelWorld delivers high-performance indoor & outdoor LED screens for retail, events, exhibitions, and branding."
+        />
+        <meta
+          property="og:image"
+          content="https://www.pixelworld.ae/images/led-display-dubai.jpg"
+        />
+        <meta property="og:url" content="https://www.pixelworld.ae/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="PixelWorld | LED Screen Supplier in Dubai"
+        />
+        <meta
+          name="twitter:description"
+          content="Indoor & outdoor LED displays, video walls & customised kiosk solutions in Dubai."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.pixelworld.ae/images/led-display-dubai.jpg"
+        />
+
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
-      
+
       <div className="hero-section">
         <div className="hero-image-container">
           {/* <img src={heroImage} alt='heroImage' width="100%" height="100%" className='hero-image' /> */}
@@ -183,7 +222,7 @@ const Home = () => {
                   target="_blank"
                 >
                   <button className="buttonTwo d-flex align-items-center gap-2">
-                    <FaWhatsapp size={30} className="whatsapp"/> +971585321473
+                    <FaWhatsapp size={30} className="whatsapp" /> +971585321473
                   </button>
                 </a>
                 <a
@@ -209,7 +248,7 @@ const Home = () => {
         <div className="home-about-left">
           <Link to="/aboutus">
             <h3>
-              About Us <BsArrowDownRightCircleFill/>
+              About Us <BsArrowDownRightCircleFill />
             </h3>
           </Link>
 
@@ -240,9 +279,11 @@ const Home = () => {
           <div className={`details-container ${showDetails ? "show" : ""}`}>
             <h2>At Pixelworld, we specialize in:</h2>
             <ul>
-               {specialties.map((item,index) => (
-                <li key={index} className="product-description">{item}</li>
-               ))}
+              {specialties.map((item, index) => (
+                <li key={index} className="product-description">
+                  {item}
+                </li>
+              ))}
             </ul>
             <p>
               Whether you're a local retailer or a global brand, our solutions
@@ -253,10 +294,10 @@ const Home = () => {
               corporate installations.
             </p>
           </div>
-           <div className="home-about-button">
-          <button onClick={() => setShowDetails(!showDetails)}>
-            {showDetails ? "Hide" : "Learn More"}
-          </button>
+          <div className="home-about-button">
+            <button onClick={() => setShowDetails(!showDetails)}>
+              {showDetails ? "Hide" : "Learn More"}
+            </button>
           </div>
         </div>
       </div>
@@ -467,7 +508,9 @@ const Home = () => {
                       />
                     </div>
                     <p className="service-text content-t2-w">{item.title}</p>
-                    <button className="blog-button content-t-w">Read more</button>
+                    <button className="blog-button content-t-w">
+                      Read more
+                    </button>
                   </div>
                 </Link>
               </div>
@@ -479,7 +522,6 @@ const Home = () => {
       {/* <div style={{ padding: "40px 0" }}>
                 <img src={WannaWorkImage} alt="WannaWorkImage" width="100%" height="100%" />
             </div> */}
-      
     </div>
   );
 };

@@ -21,33 +21,22 @@ import { Link } from "react-router-dom";
 const AboutUs = () => {
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    name: "About Us | Innovative LED Display Solutions",
-    description:
-      "Discover our mission, vision, and core values as we redefine visual storytelling with cutting-edge LED display solutions worldwide.",
+    "@type": "Organization",
+    name: "PixelWorld",
     url: "https://www.pixelworld.ae/aboutus",
-    mainEntity: {
-      "@type": "Organization",
-      name: "Pixel World",
-      url: "https://www.pixelworld.ae",
-      logo: { logo }, // Replace with your actual logo URL
-      description:
-        "Pixel World is a leader in innovative LED display solutions, transforming visual storytelling across the globe.",
-      contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "+971585321473", // Replace with your contact number
-        contactType: "Customer Service",
-        areaServed: "Worldwide",
-        availableLanguage: ["English", "Arabic"],
-      },
-      sameAs: [
-        "https://www.facebook.com/share/1FUH2at763/?mibextid=wwXIfr",
-        "https://www.instagram.com/pixelworldfzc?igsh=OHMwc3Zpazg3Y25y",
-        // "https://www.linkedin.com/company/pixelworld",
-        "https://medium.com/@pixelworldfzc",
-        "https://www.blogger.com/u/2/blog/posts/4721417252822204922",
-      ],
+    logo: "https://www.pixelworld.ae/images/logo.png",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+971585321473",
+      contactType: "sales",
+      areaServed: ["UAE", "Saudi Arabia", "Oman", "Kuwait", "Qatar", "Bahrain"],
+      availableLanguage: "English",
     },
+    sameAs: [
+      "https://www.facebook.com/profile.php?id=61573776366139",
+      "https://x.com/Pixelworldfzc",
+      "https://www.instagram.com/pixelworldfzc",
+    ],
   };
   const [showDetails, setShowDetails] = useState(false);
   const handleScrollToTop = () => {
@@ -60,20 +49,53 @@ const AboutUs = () => {
     <>
       <Helmet>
         <title>
-          LED Screen Dubai | Outdoor LED Screen | Digital Screen | PixelWorld
+          About PixelWorld | Leading LED Screen Supplier in Dubai & Gulf |
+          Indoor & Outdoor LED Displays
         </title>
         <meta
           name="description"
-          content="PixelWorld offers premium LED screen solutions in Dubai, including outdoor LED screens and digital screens. Call now for the best LED screen supplier in Dubai!"
+          content="Learn about PixelWorld, Dubai’s trusted LED screen supplier. We provide premium indoor & outdoor LED displays and customised digital kiosks across the UAE, Saudi Arabia, Oman, Kuwait, Qatar & Bahrain."
         />
         <meta
           name="keywords"
-          content="led screen dubai, outdoor led screen, led screen supplier, digital screen"
+          content="About PixelWorld, LED screen supplier Dubai, LED display UAE, digital kiosk supplier, outdoor LED Dubai, indoor LED screens, Gulf LED displays, LED video wall Dubai"
         />
-        <meta name="author" content="Pixel World" />
         <link rel="canonical" href="https://www.pixelworld.ae/aboutus" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph (Facebook & LinkedIn) */}
+        <meta
+          property="og:title"
+          content="About PixelWorld | Dubai’s Leading LED Screen & Digital Kiosk Supplier"
+        />
+        <meta
+          property="og:description"
+          content="Discover why PixelWorld is trusted by businesses across Dubai & the Gulf. We deliver premium LED screens, digital kiosks, and custom display solutions."
+        />
+        <meta
+          property="og:image"
+          content="https://www.pixelworld.ae/images/about-us-led-screens.jpg"
+        />
+        <meta property="og:url" content="https://www.pixelworld.ae/aboutus" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="About PixelWorld | Dubai’s LED Screen Supplier"
+        />
+        <meta
+          name="twitter:description"
+          content="Premium LED displays & kiosks trusted by businesses across Dubai & Gulf."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.pixelworld.ae/images/about-us-led-screens.jpg"
+        />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
+
       <section className="innovateDisplay" id="aboutus">
         <div className="d-flex justify-content-center">
           <img

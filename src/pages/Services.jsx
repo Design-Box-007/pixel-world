@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import logo from "../assets/px-logo-web.png";
-import "./Services.css"
+import "./Services.css";
 
 import OutdoorAdvertising1 from "../assets/ServiceItems/OutdoorAdvertising1.jpg";
 import OutdoorAdvertising2 from "../assets/ServiceItems/OutdoorAdvertising2.jpg";
@@ -147,43 +147,56 @@ const Services = () => {
     <div className="services" id="services">
       <Helmet>
         <title>
-          Pixel World LED Screens & Digital Kiosks – LED Lighting & Supplies
+          Projects & LED Screen Installations in Dubai | PixelWorld UAE
         </title>
         <meta
           name="description"
-          content="Pixel World offers LED screens, digital kiosks, LED lighting & supplies in Dubai. Call now for premium products to elevate your space!"
+          content="Explore PixelWorld’s LED screen projects across Dubai, Abu Dhabi & Sharjah. From indoor & outdoor LED displays to custom digital kiosks, see why we’re the No.1 LED screen supplier in UAE."
         />
         <meta
           name="keywords"
-          content="outdoor led display screen, indoor led screen, led screen panel, led screen dubai"
+          content="LED screens Dubai, LED screen supplier UAE, indoor LED screens Dubai, outdoor LED screens Dubai, digital kiosks UAE, LED video wall installation Dubai, LED signage UAE, customized LED screens Dubai"
         />
-        <meta name="author" content="Pixel World" />
+        <link
+          rel="canonical"
+          href="https://www.pixelworld.ae/led-screen-projects-dubai"
+        />
+
+        {/* ✅ Open Graph for Social Sharing */}
         <meta
           property="og:title"
-          content="Tailored Advertising Solutions | LED Displays for Every Occasion"
+          content="Projects & LED Screen Installations in Dubai | PixelWorld UAE"
         />
         <meta
           property="og:description"
-          content="Explore innovative LED displays for outdoor, specific ad formats, and mall/location-based advertising solutions. Tailored for all types of events and campaigns."
+          content="Discover PixelWorld’s portfolio of indoor & outdoor LED screen installations across UAE. Trusted by top brands, hotels & government clients."
         />
-        <meta property="og:image" content={OutdoorAdvertising1} />
-        <meta property="og:type" content="projects" />
         <meta
           property="og:url"
-          content={`https://www.pixelworld.ae/projects`}
+          content="https://www.pixelworld.ae/led-screen-projects-dubai"
         />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.pixelworld.ae/assets/projects-gallery.jpg"
+        />
+
+        {/* ✅ Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Tailored Advertising Solutions | LED Displays for Every Occasion"
+          content="Projects & LED Screen Installations in Dubai | PixelWorld UAE"
         />
         <meta
           name="twitter:description"
-          content="Explore innovative LED displays for outdoor, specific ad formats, and mall/location-based advertising solutions."
+          content="Explore LED screen installations in Dubai, Abu Dhabi & Sharjah. PixelWorld is the No.1 LED display supplier in UAE."
         />
-        <meta name="twitter:image" content={OutdoorAdvertising1} />
-        <link rel="canonical" href="https://www.pixelworld.ae/projects" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:image"
+          content="https://www.pixelworld.ae/assets/projects-gallery.jpg"
+        />
 
+        {/* ✅ Structured Data Schema */}
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
 
@@ -290,8 +303,8 @@ const Services = () => {
         ))}
       </div> */}
 
-      <Gallery/>
-      
+      <Gallery />
+
       <section className="my-5">
         <h2 className="services-subtitle text-center content-t-w">
           Why Choose Us?
