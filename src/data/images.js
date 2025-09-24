@@ -10,6 +10,12 @@ import corpImg2 from "../assets/all-pixel-world-image/corporate/image-2.jpg";
 import corpImg3 from "../assets/all-pixel-world-image/corporate/image-3.jpg";
 import corpBankKiosk from "../assets/all-pixel-world-image/corporate/image-4.jpg";
 
+import hospMenu from "../assets/all-pixel-world-image/hospitality/image-1.jpg";
+import hospMain from "../assets/all-pixel-world-image/hospitality/main-landing-image.jpg";
+import hospPOS from "../assets/all-pixel-world-image/hospitality/image-2.jpg";
+import hospSelfKiosk from "../assets/all-pixel-world-image/hospitality/image-3.jpg";
+import hospSign from "../assets/all-pixel-world-image/hospitality/image-4.jpg";
+
 const images = {
   // homeDigitalKiosk,
   // homeIndoorScreens,
@@ -46,11 +52,11 @@ const images = {
   // hospitalTouchKiosk,
   // hospitalWomanKiosk,
 
-  // hospMenu,
-  // hospMain,
-  // hospPOS,
-  // hospSelfKiosk,
-  // hospSign,
+  hospMenu,
+  hospMain,
+  hospPOS,
+  hospSelfKiosk,
+  hospSign,
 
   // mall1,
   // mall2,
