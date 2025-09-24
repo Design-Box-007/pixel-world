@@ -1,35 +1,34 @@
-import Product1 from "../assets/Products/1.jpg";
-import Product2 from "../assets/Products/2.jpg";
-import Product3 from "../assets/Products/3.jpg";
-import Product4 from "../assets/Products/4.jpg";
+import Product1 from "../assets/all-pixel-world-image/Homepage Images/Digital Kiosk.jpg";
+import Product2 from "../assets/all-pixel-world-image/Homepage Images/Indoor Led Screens.jpg";
+import Product3 from "../assets/all-pixel-world-image/Homepage Images/Outdoor Led Screens.jpg";
+import Product4 from "../assets/all-pixel-world-image/Homepage Images/LED lightings.jpg";
 
 const productData = [
   {
     image: Product1,
     title: "Digital Kiosks",
+    description:
+      "Customized digital kiosk solutions including touchscreen kiosks, self-service machines, and interactive displays. Designed and installed by PixelWorld UAE.",
     metaTitle:
-      "Digital Kiosk Display | Kiosk Machine Dubai | Electronic Digital Display Supplier",
+      "Digital Kiosk Display Dubai | Interactive Kiosk Machines UAE | PixelWorld",
+    metaDescription:
+      "PixelWorld provides customized digital kiosk solutions in Dubai, Abu Dhabi & Sharjah. From self-service kiosks to interactive displays, we design, install & maintain kiosks for retail, healthcare, hospitality, and more.",
     metasubPoints:
       "Pixel World is a trusted supplier of digital kiosk displays, kiosk machines, and electronic digital displays in Dubai. Call now for premium products and services!",
     link: "/product/digital-kiosks",
+    ogDescription:
+      "Explore PixelWorld’s interactive kiosk machines in Dubai. End-to-end digital kiosk solutions for retail, healthcare, hospitality & more.",
+    twitterDescription:
+      "Interactive kiosk solutions in Dubai, Abu Dhabi & Sharjah. Touchscreen kiosks with custom software & ongoing support.",
     productKey: "digital-kiosks",
     keywords: [
-      "digital kiosks",
-      "interactive kiosks",
-      "touch screen kiosks",
-      "indoor kiosks",
-      "outdoor kiosks",
-      "portable advertising displays",
-      "floor-standing touch kiosks",
-      "customized kiosks",
-      "high-traffic areas",
-      "Android kiosks",
-      "Windows kiosks",
-      "4K kiosks",
-      "retail kiosks",
-      "self-service stations",
-      "advertising displays",
-      "Pixelworld kiosks",
+      "digital kiosk Dubai",
+      "kiosk machine UAE",
+      "self service kiosk Dubai",
+      "electronic digital display supplier",
+      "interactive kiosks UAE",
+      "touch screen kiosk Dubai",
+      "PixelWorld kiosks",
     ],
     intro:
       "At Pixelworld, we provide end-to-end customised digital kiosk solutions that blend cutting-edge hardware with intelligent, business-specific software. From consultation and concept design to installation, on-site deployment, and maintenance, we take full responsibility for delivering kiosk systems that are efficient, interactive, and built to scale. In collaboration with our trusted software partner, Pixel Panda Technologies(www.pixelpanda.ae), Dubai, we develop tailored kiosk applications that address real-world business challenges, automate operations, and elevate user engagement. Whether you’re in retail, healthcare, hospitality, or education, our digital kiosks are designed to solve problems through intuitive user experiences, seamless integrations, and robust performance — backed by our full-service support model.",
@@ -130,30 +129,28 @@ const productData = [
   },
   {
     image: Product2,
-    title: "LED Screens",
+    title: "Indoor Led Screens",
+    description:
+      "Indoor LED screen solutions for retail, offices, malls, hospitality, and events. High-resolution displays with professional installation and support in Dubai & UAE.",
     metaTitle:
-      "LED Screen | Outdoor LED Screen Supplier in Dubai | LED Display Screen Supplier",
+      "Indoor LED Screens Dubai | LED Display Supplier UAE | PixelWorld",
+    metaDescription:
+      "PixelWorld provides high-resolution indoor LED screens across Dubai, Abu Dhabi & the Gulf. From retail to corporate, hospitality & events, our LED displays deliver unmatched clarity and seamless integration.",
+    ogDescription:
+      "Explore PixelWorld’s indoor LED screen solutions in Dubai & UAE. Tailored LED displays for retail, offices, malls, hospitality, events, and more",
+    twitterDescription:
+      "Premium indoor LED displays across UAE. PixelWorld offers high-definition LED screens with professional installation & support.",
     metasubPoints:
       "Pixel World, a trusted LED screen supplier in Dubai, offers outdoor LED screens, LED display screens, and more. Call now for premium LED screen solutions!",
     link: "/product/led-screens",
     productKey: "led-screens",
     keywords: [
-      "Indoor LED screen benefits",
-      "Outdoor LED screen features",
-      "Customized LED display advantages",
-      "Transparent LED display advertising",
-      "Flexible LED display applications",
-      "Curved LED display features",
-      "Mesh LED screen advantages",
-      "Stock market live displays",
-      "Digital billboards",
-      "Time-temperature displays",
-      "P2.5 indoor LED modules",
-      "P5.0 LED screens",
-      "P2.0 LED screens",
-      "P1.5 LED screens",
-      "P4.8 LED screens",
-      "P3.9 LED screens",
+      "indoor LED screen Dubai",
+      "LED display supplier UAE",
+      "LED video wall Dubai",
+      "high resolution LED screens",
+      "LED signage UAE",
+      "PixelWorld LED",
     ],
     intro:
       "At Pixelworld, we specialize in delivering customised indoor LED screen solutions across Dubai, United Arab Emirates, Saudi Arabia, Oman, Qatar, Kuwait, and all Gulf countries that is designed to transform any indoor space into a high-impact visual experience. Whether you're a retail brand, a corporate office, or a residential project, our indoor LED displays offer unmatched clarity, performance, and seamless design integration. We provide a wide range of high-resolution, energy-efficient indoor LED screens tailored for permanent installations, flexible configurations, or creative displays — all backed by professional installation and after-sales support.",
@@ -293,53 +290,33 @@ const productData = [
     ],
   },
   {
-    image: Product4,
+    image: Product3,
+    logo: "https://www.pixelworld.ae/logo.png",
+    telephone: "+971585321473",
     title: "Outdoor Led Solutions",
+    description:
+      "Pixelworld offers premium outdoor LED screen solutions across UAE & GCC including Dubai, Saudi Arabia, Oman, Qatar, and Kuwait.",
     metaTitle:
-      "Pixel World LED Lightings – LED Screen Components & Installation",
+      "Outdoor LED Screens Dubai, UAE | Pixelworld LED Display Solutions",
+    metaDescription:
+      "Premium outdoor LED screens in Dubai, UAE & GCC. Pixelworld delivers durable, high-brightness LED displays for advertising, events, stadiums & smart city projects. Get a free quote today!",
+    ogDescription:
+      "Premium outdoor LED display solutions across UAE & GCC. Weatherproof, high-brightness LED screens for advertising, events, and public spaces.",
+    twitterDescription:
+      "Custom outdoor LED screens across UAE & GCC. Perfect for billboards, events, stadiums, and retail displays.",
+
     metasubPoints:
       "Pixel World provides LED screen components, display control cards, outdoor LED screen installation, and LED video processors. Call now for top-quality solutions!",
     link: "/product/led-supplies",
     productKey: "led-supplies",
     keywords: [
-      "LED supplies",
-      "LED components",
-      "Control cards for LED screens",
-      "LED power supplies",
-      "Video processors for LED screens",
-      "Sending cards for LED screens",
-      "LED screen repair and maintenance",
-      "LED cabinets",
-      "Pixel LEDs",
-      "Nova receiving card",
-      "Color light receiving card",
-      "Video processors",
-      "Outdoor LED screen installation",
-      "LED screen modules",
-      "Digital signage components",
-      "Interactive LED kiosks",
-      "LED display systems",
-      "High-definition LED screens",
-      "Large-scale LED video walls",
-      "Retail display LED solutions",
-      "Advertising LED screens",
-      "LED billboard technology",
-      "Touch sensors for LED kiosks",
-      "Media players for LED screens",
-      "Energy-efficient LED systems",
-      "Durable LED supplies",
-      "Customizable LED displays",
-      "Weather-resistant LED modules",
-      "Bright LED displays",
-      "High-resolution LED screens",
-      "Digital advertising solutions",
-      "Event LED displays",
-      "LED technology components",
-      "LED screen troubleshooting",
-      "LED system calibration",
-      "LED content synchronization",
-      "Scalable LED cabinets",
-      "Outdoor LED signage",
+      "outdoor LED screens Dubai",
+      "LED display UAE",
+      "LED billboard GCC",
+      "LED video wall Dubai",
+      "outdoor advertising screen UAE",
+      "LED signage supplier Dubai",
+      "LED display rental UAE",
     ],
     intro:
       "Pixelworld offers premium customised outdoor LED display solutions across Dubai, United Arab Emirates, Saudi Arabia, Oman, Qatar, Kuwait, and all Gulf countries. Our LED screens are designed to withstand the toughest weather conditions while delivering stunning visuals for maximum brand impact. Durable and high-brightness, they’re perfect for advertising, events, and public information displays in a variety of outdoor environments. Whether you need large-scale billboards, interactive LED walls, or digital signage for public spaces, we provide tailored solutions that combine advanced technology with expert installation and maintenance services.",
@@ -422,48 +399,33 @@ const productData = [
     ],
   },
   {
-    image: Product3,
+    image: Product4,
     title: "LED Lightings",
-    metaTitle: "Pixel World LED Lightings – LED Light Suppliers in Dubai",
+    logo: "https://www.pixelworld.ae/assets/images/logo.png",
+    telephone: "+971585321473",
+    description:
+      "Pixelworld supplies premium LED lightings in Dubai & UAE including track lights, spotlights, neon-flex, strip, linear and flexible modules.",
+    metaTitle: "LED Lightings Dubai, UAE | Pixelworld LED Lighting Solutions",
+    metaDescription:
+      "Pixelworld provides premium LED lightings in Dubai & UAE. Explore energy-efficient LED track lights, spotlights, neon-flex, linear, strip lights & flexible modules for residential, commercial & industrial use.",
+    ogDescription:
+      "Energy-efficient LED lighting solutions in Dubai & GCC. Track lights, spotlights, neon-flex, linear, and strip lights for residential & commercial use.",
+    twitterDescription:
+      "Explore energy-efficient LED lighting in Dubai & GCC. Pixelworld offers track lights, spotlights, neon-flex, strip & linear lights.",
     metasubPoints:
       "Pixel World, leading LED light suppliers in Dubai, offers premium-quality LED lights for all your lighting needs. Call now to get the best LED solutions in Dubai!",
     link: "/product/led-lightings",
     productKey: "led-lightings",
     keywords: [
-      "LED lightings",
-      "LED lighting systems",
-      "Track lights",
-      "Spotlights",
-      "Neon-flex lights",
-      "Linear lights",
-      "LED strip lights",
-      "Flexible LED modules",
-      "Energy-efficient lighting",
-      "Durable lighting solutions",
-      "Customizable LED lighting",
-      "Indoor LED lighting",
-      "Outdoor LED lighting",
-      "Commercial LED lighting",
-      "Residential LED lighting",
-      "Industrial LED lighting",
-      "Architectural lighting",
-      "Retail store lighting",
-      "Museum lighting",
-      "Art gallery lighting",
-      "Event lighting solutions",
-      "Advertising displays",
-      "Accent lighting",
-      "Under-cabinet lighting",
-      "Decorative LED lighting",
-      "Modern lighting solutions",
-      "High-quality light distribution",
-      "Creative LED lighting installations",
-      "Low-maintenance LED lighting",
-      "Environmentally friendly lighting",
-      "Long lifespan lighting solutions",
-      "Cost-effective LED lights",
-      "Bright and consistent lighting",
-      "Customizable lighting solutions",
+      "LED lighting Dubai",
+      "LED lights UAE",
+      "LED suppliers Dubai",
+      "LED track lights UAE",
+      "LED spotlights Dubai",
+      "LED strip lights UAE",
+      "LED neon flex Dubai",
+      "LED linear lights UAE",
+      "LED lighting supplier GCC",
     ],
     intro:
       " LED lighting refers to lighting systems that use Light Emitting Diodes (LEDs) to produce light, offering superior energy efficiency, durability, and a long lifespan compared to traditional lighting solutions. It is widely used in various applications, including residential, commercial, industrial, and outdoor spaces. Different types of LED lighting include track lights, which provide directional illumination for retail stores and galleries; spotlights, commonly used in theaters and museums to highlight specific areas or objects; neon-flex lights, which mimic traditional neon lights for decorative purposes in bars and restaurants; linear lights, perfect for creating uniform illumination in corridors and offices; LED strip lights, which are flexible and ideal for accent lighting in kitchens or staircases; and flexible modules, used in creative advertising displays and architectural installations. These LED lights are energy-efficient, offer long lifespans, and are environmentally friendly, making them cost-effective over time. They can be maintained easily by cleaning the fixtures and replacing any malfunctioning parts, ensuring continued performance. LED lighting has become a staple across industries due to its ability to provide bright, consistent, and customizable lighting solutions for nearly any space, improving both functionality and aesthetics.",
