@@ -1,7 +1,5 @@
 import images from "./images";
 
- 
-
 // src/data/industryMetaData.js
 const industryMetaData = [
   {

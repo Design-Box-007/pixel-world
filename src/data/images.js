@@ -4,6 +4,12 @@ import retailImg3 from "../assets/all-pixel-world-image/industries-images/retail
 import retailImg4 from "../assets/all-pixel-world-image/industries-images/retail/image-4.jpg";
 import retailTile from "../assets/all-pixel-world-image/industries-images/retail/retail-tile-card.jpg";
 
+import corpTile from "../assets/all-pixel-world-image/corporate/corporate-tile-card-image.jpg";
+import corpImg1 from "../assets/all-pixel-world-image/corporate/image-1.jpg";
+import corpImg2 from "../assets/all-pixel-world-image/corporate/image-2.jpg";
+import corpImg3 from "../assets/all-pixel-world-image/corporate/image-3.jpg";
+import corpBankKiosk from "../assets/all-pixel-world-image/corporate/image-4.jpg";
+
 const images = {
   // homeDigitalKiosk,
   // homeIndoorScreens,
@@ -16,11 +22,11 @@ const images = {
   // concertTile,
   // concert4,
 
-  // corpTile,
-  // corpImg1,
-  // corpImg2,
-  // corpImg3,
-  // corpBankKiosk,
+  corpTile,
+  corpImg1,
+  corpImg2,
+  corpImg3,
+  corpBankKiosk,
 
   // exhibitMuseum1,
   // exhibitMuseum2,
