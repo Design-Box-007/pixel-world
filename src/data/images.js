@@ -46,6 +46,12 @@ import street3 from "../assets/all-pixel-world-image/street-and-outdoor/image-3.
 import streetTile from "../assets/all-pixel-world-image/street-and-outdoor/tile-card-image.jpg";
 import street4 from "../assets/all-pixel-world-image/street-and-outdoor/image-4.jpg";
 
+import mall1 from "../assets/all-pixel-world-image/mall-advertising/image-1.jpg";
+import mall2 from "../assets/all-pixel-world-image/mall-advertising/image-2.jpg";
+import mall3 from "../assets/all-pixel-world-image/mall-advertising/image-3.jpg";
+import mallMain from "../assets/all-pixel-world-image/mall-advertising/main-landing-page.jpg";
+import mall4 from "../assets/all-pixel-world-image/mall-advertising/image-4.jpg";
+
 const images = {
   concert1,
   concert2,
@@ -83,11 +89,11 @@ const images = {
   hospSelfKiosk,
   hospSign,
 
-  // mall1,
-  // mall2,
-  // mall3,
-  // mallMain,
-  // mall4,
+  mall1,
+  mall2,
+  mall3,
+  mallMain,
+  mall4,
 
   retailImg1,
   retailImg2,
