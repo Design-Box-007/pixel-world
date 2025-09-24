@@ -16,6 +16,12 @@ import hospPOS from "../assets/all-pixel-world-image/hospitality/image-2.jpg";
 import hospSelfKiosk from "../assets/all-pixel-world-image/hospitality/image-3.jpg";
 import hospSign from "../assets/all-pixel-world-image/hospitality/image-4.jpg";
 
+import hospitalFamilyKiosk from "../assets/all-pixel-world-image/hospital/image-1.jpg";
+import hospitalTile from "../assets/all-pixel-world-image/hospital/main-landing-tile-card.jpg";
+import hospitalEntrance from "../assets/all-pixel-world-image/hospital/image-2.jpg";
+import hospitalTouchKiosk from "../assets/all-pixel-world-image/hospital/image-3.jpg";
+import hospitalWomanKiosk from "../assets/all-pixel-world-image/hospital/image-4.jpg";
+
 const images = {
   // homeDigitalKiosk,
   // homeIndoorScreens,
@@ -46,11 +52,11 @@ const images = {
   // home3,
   // home4,
 
-  // hospitalFamilyKiosk,
-  // hospitalTile,
-  // hospitalEntrance,
-  // hospitalTouchKiosk,
-  // hospitalWomanKiosk,
+  hospitalFamilyKiosk,
+  hospitalTile,
+  hospitalEntrance,
+  hospitalTouchKiosk,
+  hospitalWomanKiosk,
 
   hospMenu,
   hospMain,
