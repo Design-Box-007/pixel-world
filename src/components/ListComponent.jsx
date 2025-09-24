@@ -11,7 +11,7 @@ const KioskFeatures = ({ kiosks = [] }) => {
               {kiosk.cardImage && (
                 <div className="hero-image-container">
                   <img
-                    src={"https://placehold.co/400"}
+                    src={kiosk.cardImage}
                     alt={kiosk.cardAlt || "card image"}
                     className="product-image"
                   />

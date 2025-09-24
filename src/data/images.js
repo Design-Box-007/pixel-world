@@ -1,0 +1,68 @@
+import retailImg1 from "../assets/all-pixel-world-image/industries-images/retail/image-1.jpg";
+import retailImg2 from "../assets/all-pixel-world-image/industries-images/retail/image-2.jpg";
+import retailImg3 from "../assets/all-pixel-world-image/industries-images/retail/image-3.jpg";
+import retailImg4 from "../assets/all-pixel-world-image/industries-images/retail/image-4.jpg";
+import retailTile from "../assets/all-pixel-world-image/industries-images/retail/retail-tile-card.jpg";
+
+const images = {
+  // homeDigitalKiosk,
+  // homeIndoorScreens,
+  // homeLightings,
+  // homeOutdoorScreens,
+
+  // concert1,
+  // concert2,
+  // concert3,
+  // concertTile,
+  // concert4,
+
+  // corpTile,
+  // corpImg1,
+  // corpImg2,
+  // corpImg3,
+  // corpBankKiosk,
+
+  // exhibitMuseum1,
+  // exhibitMuseum2,
+  // exhibitMuseum3,
+  // exhibitMuseum4,
+  // exhibitTile,
+
+  // homeMain,
+  // home1,
+  // home2,
+  // home3,
+  // home4,
+
+  // hospitalFamilyKiosk,
+  // hospitalTile,
+  // hospitalEntrance,
+  // hospitalTouchKiosk,
+  // hospitalWomanKiosk,
+
+  // hospMenu,
+  // hospMain,
+  // hospPOS,
+  // hospSelfKiosk,
+  // hospSign,
+
+  // mall1,
+  // mall2,
+  // mall3,
+  // mallMain,
+  // mall4,
+
+  retailImg1,
+  retailImg2,
+  retailImg3,
+  retailImg4,
+  retailTile,
+
+  // street1,
+  // street2,
+  // street3,
+  // streetTile,
+  // street4,
+};
+
+export default images;

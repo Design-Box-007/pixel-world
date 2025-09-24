@@ -1,19 +1,8 @@
-// import ExploreImageOne from '../assets/Indoor Led display.jpg';
-import RetailImage from "../assets/Industries/Retail.jpg";
-import HospitalityImage from "../assets/Industries/Hospitality.jpg";
-import ConcertsImage from "../assets/Industries/Concerts.jpg";
-import HomeImage from "../assets/Industries/Home.jpg";
-import HospitalsImage from "../assets/Industries/Hospitals.jpg";
-import MallImage from "../assets/Industries/mall.jpg";
-import CorporateImage from "../assets/Industries/Corporate.jpg";
-
-import StreetHighwayImage from "../assets/Industries/Street& Highway.jpg";
-
-import ExhibitionsMuseumsImage from "../assets/Industries/Exhibitions, Museums.jpg";
+import images from "./images";
 
 const insdustriesData = [
   {
-    image: RetailImage,
+    image: images.retailTile,
     industryKey: "retail",
     title: "Retail",
     subtitle:
@@ -23,7 +12,7 @@ const insdustriesData = [
     kioskData: [
       {
         cardTitle: "Customised Digital Kiosks: Smarter Customer Interactions",
-        cardImage: CorporateImage,
+        cardImage: images.retailImg1,
         cardAlt: "Digital Kiosk",
         titles: ["Problems Solved:"],
         features: [
@@ -48,7 +37,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.retailImg2,
         cardAlt: "Indoor LED Screens",
         cardTitle: "Indoor LED Screens: Enhance the In-Store Experience",
         titles: ["Problems Solved:"],
@@ -73,7 +62,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.retailImg3,
         cardAlt: "Outdoor LED Screens",
         cardTitle: "Outdoor LED Screens: Capture Attention Before They Walk In",
         titles: ["Problems Solved:"],
@@ -190,7 +179,7 @@ const insdustriesData = [
     ],
   },
   {
-    image: CorporateImage,
+    image: images.corpTile,
     industryKey: "corporate",
     title: "Corporate",
     subtitle:
@@ -212,7 +201,7 @@ const insdustriesData = [
         footers: [
           "These kiosks are powered by intelligent, industry-specific software developed in partnership with Pixel Panda Technologies, ensuring each installation is customised to fit the client's infrastructure and workflow.",
         ],
-        cardImage: CorporateImage,
+        cardImage: images.corpImg1,
         cardAlt: "Kiosk 1",
         cardTitle:
           "Customised Digital Kiosks: Streamlining Front Desk Operations and Workplace Management",
@@ -233,7 +222,7 @@ const insdustriesData = [
         footers: [
           "Our indoor LED screens are energy-efficient, sleek, and designed to blend seamlessly with corporate aesthetics, making your office not just functional but future-forward.",
         ],
-        cardImage: CorporateImage,
+        cardImage: images.corpImg2,
         cardAlt: "Kiosk 2",
         cardTitle:
           "Indoor LED Displays: Enhancing Internal Communication and Workplace Ambience",
@@ -241,7 +230,7 @@ const insdustriesData = [
           "Corporate teams often struggle with effective communication across departments, especially in large buildings or multi-floor offices. Traditional notice boards and emails lack impact, and brand messaging is often lost in everyday clutter.",
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.corpImg3,
         cardAlt: "Kiosk 3",
         cardTitle:
           "Outdoor LED Displays: Maximizing Brand Visibility and External Communication",
@@ -349,7 +338,7 @@ const insdustriesData = [
     ],
   },
   {
-    image: HospitalityImage,
+    image: images.hospMain,
     industryKey: "hospitality",
     title: "Hospitality",
     subtitle:
@@ -359,7 +348,7 @@ const insdustriesData = [
 
     kioskData: [
       {
-        cardImage: CorporateImage,
+        cardImage: images.hospSelfKiosk,
         cardAlt: "Hospitality Kiosk",
         cardTitle:
           "Digital Kiosks: Reducing Wait Times, Enhancing Guest Convenience",
@@ -384,7 +373,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.hospMenu,
         cardAlt: "Hospitality Indoor LED",
         cardTitle:
           "Indoor LED Displays: Enhancing Ambience and Real-Time Engagement",
@@ -407,7 +396,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.hospPOS,
         cardAlt: "Hospitality Outdoor LED",
         cardTitle:
           "Outdoor LED Screens: Capturing Attention and Driving Foot Traffic",
@@ -524,7 +513,7 @@ const insdustriesData = [
     ],
   },
   {
-    image: HospitalsImage,
+    image: images.hospitalTile,
     industryKey: "hospital",
     title: "Hospital",
     subtitle:
@@ -538,7 +527,7 @@ const insdustriesData = [
     is helping healthcare providers overcome these barriers, one digital solution at a time. `,
     kioskData: [
       {
-        cardImage: CorporateImage,
+        cardImage: images.hospitalFamilyKiosk,
         cardAlt: "Healthcare Kiosk",
         cardTitle: "Digital Kiosks: Streamlining Patient Flow and Self-Service",
         cardDescription: `
@@ -560,7 +549,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.hospitalEntrance,
         cardAlt: "Healthcare Indoor LED",
         cardTitle: "Indoor LED Displays: Inform, Educate, and Reassure",
         cardDescription: `
@@ -582,7 +571,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.hospitalWomanKiosk,
         cardAlt: "Healthcare Outdoor LED",
         cardTitle: "Outdoor LED Screens: Communicating with the Community",
         cardDescription: `
@@ -703,7 +692,7 @@ const insdustriesData = [
     ],
   },
   {
-    image: ExhibitionsMuseumsImage,
+    image: images.exhibitTile,
     industryKey: "exhibition-museum-and-art-galleries",
     title: "Exhibition, Museum & Art Galleries",
     subtitle:
@@ -712,7 +701,7 @@ const insdustriesData = [
       "In today’s digital era, exhibitions, museums, and art galleries are transitioning from traditional displays to more dynamic and engaging experiences. Whether it's showcasing contemporary artwork or historical treasures, the goal is to captivate visitors, tell stories more vividly, and provide immersive environments that leave a lasting impression.</br></br>However, many institutions across the UAE, Saudi Arabia, Qatar, Oman, Kuwait, and the wider Gulf region face challenges such as limited interactivity, static signage, and outdated visitor engagement methods. PixelWorld addresses these issues by offering a combination of digital kiosks, indoor LED screens, and outdoor LED displays that transform the way cultural content is delivered and experienced.",
     kioskData: [
       {
-        cardImage: CorporateImage,
+        cardImage: images.exhibitMuseum1,
         cardAlt: "Healthcare Kiosk",
         cardTitle:
           "Digital kiosks for interactive engagement and smart navigation",
@@ -721,7 +710,7 @@ const insdustriesData = [
    `,
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.exhibitMuseum2,
         cardAlt: "Healthcare Indoor LED",
         cardTitle: "Indoor LED screens for storytelling and ambiance",
         cardDescription: `
@@ -729,7 +718,7 @@ const insdustriesData = [
    `,
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.exhibitMuseum3,
         cardAlt: "Healthcare Outdoor LED",
         cardTitle: "Outdoor LED displays to attract and inform",
         cardDescription: `
@@ -824,7 +813,7 @@ const insdustriesData = [
     ],
   },
   {
-    image: HomeImage,
+    image: images.homeMain,
     industryKey: "home",
     title: "Home",
     subtitle: "Transforming Homes and Residences with PixelWorld",
@@ -832,7 +821,7 @@ const insdustriesData = [
       "Homes are more than just living spaces — they’re where memories are made, families gather, and lifestyles are expressed. But many residences across the UAE, Saudi Arabia, Qatar, Oman, Kuwait, and the wider Gulf face the same challenges: outdated entertainment setups, limited control over smart systems, and a lack of modern design elements that blend technology with aesthetics.</br></br>At PixelWorld, we bring technology into homes in ways that are seamless, stylish, and practical — turning everyday living into an elevated experience. With LED displays, digital kiosks, and custom software solutions developed by our partner Pixel Panda Technologies, we create smart environments that are as beautiful as they are functional.",
     kioskData: [
       {
-        cardImage: CorporateImage,
+        cardImage: images.home1,
         cardAlt: "Healthcare Kiosk",
         cardTitle: "Digital kiosks for smart living and family convenience",
         cardDescription: `
@@ -851,7 +840,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.home2,
         cardAlt: "Healthcare Indoor LED",
         cardTitle: "Indoor LED screens for entertainment and ambiance",
         cardDescription: `
@@ -868,7 +857,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.home3,
         cardAlt: "Healthcare Outdoor LED",
         cardTitle: "Outdoor LED displays for style and security",
         cardDescription: `
@@ -981,7 +970,7 @@ const insdustriesData = [
     ],
   },
   {
-    image: ConcertsImage,
+    image: images.concertTile,
     industryKey: "concerts-events-rental-staging",
     title: "Concerts,Events,Rental Staging",
     subtitle: "Elevating Concerts, Events, and Rental Staging with PixelWorld",
@@ -990,7 +979,7 @@ const insdustriesData = [
 
     kioskData: [
       {
-        cardImage: CorporateImage,
+        cardImage: images.concert1,
         cardAlt: "Home Kiosk",
         cardTitle:
           "Digital kiosks for smooth entry, engagement, and interaction",
@@ -1010,7 +999,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.concert2,
         cardAlt: "Indoor LED Home",
         cardTitle:
           "Indoor LED screens that turn stages into storytelling platforms",
@@ -1028,7 +1017,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.concert3,
         cardAlt: "Outdoor LED Home",
         cardTitle: "Outdoor LED displays for maximum reach and visibility",
         cardDescription: `
@@ -1143,9 +1132,8 @@ const insdustriesData = [
       },
     ],
   },
-
   {
-    image: StreetHighwayImage,
+    image: images.streetTile,
     industryKey: "street-and-highway-outdoor-advertising",
     title: "Street and Highway Outdoor Advertising",
     subtitle: "Redefining Street and Highway Advertising with PixelWorld",
@@ -1153,7 +1141,7 @@ const insdustriesData = [
       "Billboards and posters have long dominated streets and highways, but in today’s fast-moving world, static advertising often fades into the background. Commuters pass by without noticing, campaigns are hard to update, and advertisers struggle to measure impact.</br></br>Across the UAE, Saudi Arabia, Qatar, Oman, Kuwait, and the wider Gulf, brands are asking for more: ads that stand out, connect with audiences in real time, and adapt to changing campaigns instantly. PixelWorld delivers exactly that with dynamic LED displays, digital kiosks, and smart software powered by Pixel Panda Technologies — transforming outdoor advertising into an engaging and measurable experience.",
     kioskData: [
       {
-        cardImage: CorporateImage,
+        cardImage: images.street1,
         cardAlt: "Street Digital Kiosk",
         cardTitle: "Digital Kiosks that Engage Beyond the Billboard",
         cardDescription: `
@@ -1172,7 +1160,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.street2,
         cardAlt: "Highway Outdoor LED",
         cardTitle:
           "Outdoor LED Screens that Dominate Highways and City Streets",
@@ -1193,7 +1181,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.street3,
         cardAlt: "Data Driven Advertising",
         cardTitle: "Smarter Advertising with Data and Control",
         cardDescription: `
@@ -1316,7 +1304,7 @@ const insdustriesData = [
     ],
   },
   {
-    image: MallImage,
+    image: images.mallMain,
     industryKey: "mall-advertising",
     title: "Mall Advertising",
     subtitle: "Transforming Mall and Retail Experiences with PixelWorld",
@@ -1324,7 +1312,7 @@ const insdustriesData = [
       "Shopping has evolved far beyond browsing shelves. Today’s customers expect more than products — they want experiences that are engaging, personalized, and memorable. Yet many malls and retail spaces across the UAE, Saudi Arabia, Qatar, Oman, Kuwait, and the wider Gulf still rely on static posters, traditional signboards, and outdated information systems that fail to capture modern shoppers’ attention.  </br></br> PixelWorld helps retailers and mall operators bridge this gap by combining digital kiosks, indoor LED screens, and outdoor LED displays with custom software by Pixel Panda Technologies. Together, we create environments that not only attract customers but keep them engaged, informed, and connected.",
     kioskData: [
       {
-        cardImage: CorporateImage,
+        cardImage: images.mall1,
         cardAlt: "Mall Digital Kiosk",
         cardTitle: "Digital Kiosks for Smarter Shopping Journeys",
         cardDescription: `
@@ -1343,7 +1331,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.mall2,
         cardAlt: "Indoor LED Screens",
         cardTitle: "Indoor LED Screens that Captivate Shoppers",
         cardDescription: `
@@ -1361,7 +1349,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.mall3,
         cardAlt: "Outdoor LED Displays",
         cardTitle: "Outdoor LED Displays to Attract Visitors",
         cardDescription: `
@@ -1378,7 +1366,7 @@ const insdustriesData = [
         ],
       },
       {
-        cardImage: CorporateImage,
+        cardImage: images.mall4,
         cardAlt: "Data Driven Retail",
         cardTitle: "Smarter Retail with Data-Driven Solutions",
         cardDescription: `
