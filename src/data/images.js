@@ -34,14 +34,24 @@ import home2 from "../assets/all-pixel-world-image/home/image-2.jpg";
 import home3 from "../assets/all-pixel-world-image/home/image-3.jpg";
 import home4 from "../assets/all-pixel-world-image/home/image-4.jpg";
 
+import concert1 from "../assets/all-pixel-world-image/concerts--events/image-1.jpg";
+import concert2 from "../assets/all-pixel-world-image/concerts--events/image-2.jpg";
+import concert3 from "../assets/all-pixel-world-image/concerts--events/image-3.jpg";
+import concertTile from "../assets/all-pixel-world-image/concerts--events/tile card.jpg";
+import concert4 from "../assets/all-pixel-world-image/concerts--events/image-4.jpg";
+
+// import street1 from "../assets/all-pixel-world-image";
+// import street2 from "../assets/new-images/industries/street-and-outdoor/iotintegrated-street-vendors-offering-dynamic-pricing.jpg";
+// import street3 from "../assets/new-images/industries/street-and-outdoor/prominent-digital-billboard-european-building-blank-space-modern-advertisement.jpg";
+// import streetTile from "../assets/new-images/industries/street-and-outdoor/tile-card-image.jpg";
+// import street4 from "../assets/new-images/industries/street-and-outdoor/young-french-man-waiting-station-bus-drinking-coffee.jpg";
 
 const images = {
-
-  // concert1,
-  // concert2,
-  // concert3,
-  // concertTile,
-  // concert4,
+  concert1,
+  concert2,
+  concert3,
+  concertTile,
+  concert4,
 
   corpTile,
   corpImg1,
