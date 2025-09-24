@@ -22,6 +22,13 @@ import hospitalEntrance from "../assets/all-pixel-world-image/hospital/image-2.j
 import hospitalTouchKiosk from "../assets/all-pixel-world-image/hospital/image-3.jpg";
 import hospitalWomanKiosk from "../assets/all-pixel-world-image/hospital/image-4.jpg";
 
+import exhibitMuseum1 from "../assets/all-pixel-world-image/exhibition--museums/Image 1.jpg";
+import exhibitMuseum2 from "../assets/all-pixel-world-image/exhibition--museums/Image 2.jpg";
+import exhibitMuseum3 from "../assets/all-pixel-world-image/exhibition--museums/Image 3.jpg";
+import exhibitMuseum4 from "../assets/all-pixel-world-image/exhibition--museums/Image 4.jpg";
+import exhibitTile from "../assets/all-pixel-world-image/exhibition--museums/Main tile image.jpg";
+
+
 const images = {
   // homeDigitalKiosk,
   // homeIndoorScreens,
@@ -40,11 +47,11 @@ const images = {
   corpImg3,
   corpBankKiosk,
 
-  // exhibitMuseum1,
-  // exhibitMuseum2,
-  // exhibitMuseum3,
-  // exhibitMuseum4,
-  // exhibitTile,
+  exhibitMuseum1,
+  exhibitMuseum2,
+  exhibitMuseum3,
+  exhibitMuseum4,
+  exhibitTile,
 
   // homeMain,
   // home1,
