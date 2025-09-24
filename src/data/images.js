@@ -28,12 +28,14 @@ import exhibitMuseum3 from "../assets/all-pixel-world-image/exhibition--museums/
 import exhibitMuseum4 from "../assets/all-pixel-world-image/exhibition--museums/Image 4.jpg";
 import exhibitTile from "../assets/all-pixel-world-image/exhibition--museums/Main tile image.jpg";
 
+import homeMain from "../assets/all-pixel-world-image/home/main-landing-image.jpg";
+import home1 from "../assets/all-pixel-world-image/home/image-1.jpg";
+import home2 from "../assets/all-pixel-world-image/home/image-2.jpg";
+import home3 from "../assets/all-pixel-world-image/home/image-3.jpg";
+import home4 from "../assets/all-pixel-world-image/home/image-4.jpg";
+
 
 const images = {
-  // homeDigitalKiosk,
-  // homeIndoorScreens,
-  // homeLightings,
-  // homeOutdoorScreens,
 
   // concert1,
   // concert2,
@@ -53,11 +55,11 @@ const images = {
   exhibitMuseum4,
   exhibitTile,
 
-  // homeMain,
-  // home1,
-  // home2,
-  // home3,
-  // home4,
+  homeMain,
+  home1,
+  home2,
+  home3,
+  home4,
 
   hospitalFamilyKiosk,
   hospitalTile,
