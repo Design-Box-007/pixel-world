@@ -7,7 +7,8 @@ import FacebookIcon from "../assets/FacebookIcon.png";
 import emailjs from "emailjs-com";
 import { Link } from "react-router-dom";
 import { BsInstagram, BsTwitterX } from "react-icons/bs";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaMediumM } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
 // import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
@@ -186,10 +187,7 @@ const Footer = () => {
         </div>
         <div className="col-md-3">
           <div className="d-flex gap-3 my-3 flex-wrap">
-            <a
-              href="https://www.instagram.com/pixelworldfzc?igsh=OHMwc3Zpazg3Y25y"
-              target="_blank"
-            >
+            <a href="https://www.instagram.com/pixelworld_fzc/" target="_blank">
               {" "}
               <BsInstagram size={30} color="#E1306C" />
             </a>
@@ -201,6 +199,21 @@ const Footer = () => {
               target="_blank"
             >
               <FaFacebook size={30} />
+            </a>
+            <a href="https://medium.com/@pixelworldfzc" target="_blank">
+              <FaMediumM size={30} color="black" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/pixelworld-llc/about/?viewAsMember=true"
+              target="_blank"
+            >
+              <FaLinkedin size={30} color="#0A66C2" />
+            </a>
+            <a
+              href="https://www.tiktok.com/@pixelworldfzc?lang=en-GB"
+              target="_blank"
+            >
+              <FaTiktok size={30} color="black"/>
             </a>
           </div>
           <h6 className="footer-address">
