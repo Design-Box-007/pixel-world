@@ -40,11 +40,11 @@ import concert3 from "../assets/all-pixel-world-image/concerts--events/image-3.j
 import concertTile from "../assets/all-pixel-world-image/concerts--events/tile card.jpg";
 import concert4 from "../assets/all-pixel-world-image/concerts--events/image-4.jpg";
 
-// import street1 from "../assets/all-pixel-world-image";
-// import street2 from "../assets/new-images/industries/street-and-outdoor/iotintegrated-street-vendors-offering-dynamic-pricing.jpg";
-// import street3 from "../assets/new-images/industries/street-and-outdoor/prominent-digital-billboard-european-building-blank-space-modern-advertisement.jpg";
-// import streetTile from "../assets/new-images/industries/street-and-outdoor/tile-card-image.jpg";
-// import street4 from "../assets/new-images/industries/street-and-outdoor/young-french-man-waiting-station-bus-drinking-coffee.jpg";
+import street1 from "../assets/all-pixel-world-image/street-and-outdoor/image-1.jpg";
+import street2 from "../assets/all-pixel-world-image/street-and-outdoor/image-2.jpg";
+import street3 from "../assets/all-pixel-world-image/street-and-outdoor/image-3.jpg";
+import streetTile from "../assets/all-pixel-world-image/street-and-outdoor/tile-card-image.jpg";
+import street4 from "../assets/all-pixel-world-image/street-and-outdoor/image-4.jpg";
 
 const images = {
   concert1,
@@ -95,11 +95,11 @@ const images = {
   retailImg4,
   retailTile,
 
-  // street1,
-  // street2,
-  // street3,
-  // streetTile,
-  // street4,
+  street1,
+  street2,
+  street3,
+  streetTile,
+  street4,
 };
 
 export default images;
