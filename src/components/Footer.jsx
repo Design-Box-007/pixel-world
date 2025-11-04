@@ -216,10 +216,10 @@ const Footer = () => {
               <FaTiktok size={30} color="black"/>
             </a>
           </div>
-          <h6 className="footer-address">
+          {/* <h6 className="footer-address">
             408, Appartment M02, Persia cluster, International
-            city, Dubai - UAE.
-          </h6>
+            city,Dubai-UAE.
+          </h6> */}
           <h6 className="footer-email">
             <a href="mailto:sales@pixelworld.ae">Email Us</a>
           </h6>
