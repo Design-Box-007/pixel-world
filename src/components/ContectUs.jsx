@@ -73,10 +73,10 @@ const ContactUs = () => {
                                     <p>+971 58 532 1473</p>
                                     <p>+971 55 513 1473</p>
                                 </div>
-                                <div className='contact-address'>
+                                {/* <div className='contact-address'>
                                     <h5>Address</h5>
                                     <p>408, Appartment M02, Persia cluster,<br /> International city, Dubai - UAE</p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className='col-md-6'>

@@ -157,8 +157,12 @@ const Footer = () => {
         your journey with Us
       </div> */}
       <div className="row">
-        <div className="col-md-6">
-          <div className="footer-map mb-4">
+        <div className="col-md-4">
+          <div className="footer-logo">
+          <img src={logoWhite} alt="logoWhite" width={200} height={60} />
+          {/* <span>Pixel World</span> */}
+        </div>
+          {/* <div className="footer-map mb-4">
             <iframe
               title="Location"
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3607.7961265096114!2d55.451173375384435!3d25.277442777659356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDE2JzM4LjgiTiA1NcKwMjcnMTMuNSJF!5e0!3m2!1sen!2sin!4v1734017661072!5m2!1sen!2sin"
@@ -169,7 +173,7 @@ const Footer = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
+          </div> */}
         </div>
         <div className="col-md-3">
           <h5 className="footer-navlinks-title">Links</h5>
@@ -235,11 +239,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="d-sm-flex justify-content-between align-items-center">
-        <div className="footer-logo">
-          <img src={logoWhite} alt="logoWhite" width={200} height={60} />
-          {/* <span>Pixel World</span> */}
-        </div>
+      <div className="d-sm-flex justify-content-end align-items-center">
+        
         <div>
           <a
             href="https://www.pixelpanda.ae/"
